@@ -13,7 +13,6 @@
                         "id": {
                             "type": "Identifier",
                             "value": "hello",
-                            "optional": false,
                             "typeAnnotation": null,
                             "start": 6,
                             "end": 11,
@@ -31,7 +30,6 @@
                         "init": {
                             "type": "StringLiteral",
                             "value": "world",
-                            "extra": {},
                             "start": 14,
                             "end": 21,
                             "loc": {
@@ -43,7 +41,8 @@
                                     "line": 1,
                                     "column": 21
                                 }
-                            }
+                            },
+                            "extra": {}
                         },
                         "start": 6,
                         "end": 21,
@@ -75,7 +74,6 @@
         ],
         "interpreter": null,
         "directives": [],
-        "sourceType": "module",
         "start": 0,
         "end": 22,
         "loc": {
@@ -87,7 +85,8 @@
                 "line": 2,
                 "column": 0
             }
-        }
+        },
+        "sourceType": "module"
     },
     "comments": []
 }
