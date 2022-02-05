@@ -11,7 +11,6 @@
     "url": "git://github.com/coderaiser/swc-to-babel.git"
   },
   "scripts": {
-    "wisdom": "madrun wisdom",
     "test": "madrun test",
     "watch:test": "madrun watch:test",
     "lint": "madrun lint",
