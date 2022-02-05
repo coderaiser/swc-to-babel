@@ -37,11 +37,11 @@ npm i swc-to-babel
 ### Example
 
 ```js
-const cherow = require('cherow');
+const swc = require('@swc/core');
 const toBabel = require('swc-to-babel');
 const traverse = require('@babel/traverse').default;
 
-const ast = toBabel(cherow.parse(`
+const ast = toBabel(swc.parse(`
     const f = ({a}) => a;
 `));
 
