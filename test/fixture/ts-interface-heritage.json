@@ -1,0 +1,49 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "TSInterfaceDeclaration",
+                "body": {
+                    "type": "TSInterfaceBody",
+                    "body": []
+                },
+                "id": {
+                    "type": "Identifier",
+                    "name": "x"
+                },
+                "extends": [
+                    {
+                        "type": "TSExpressionWithTypeArguments",
+                        "expression": {
+                            "type": "TSQualifiedName",
+                            "computed": false,
+                            "optional": false,
+                            "left": {
+                                "type": "TSQualifiedName",
+                                "computed": false,
+                                "optional": false,
+                                "left": {
+                                    "type": "Identifier",
+                                    "name": "y"
+                                },
+                                "right": {
+                                    "type": "Identifier",
+                                    "name": "z"
+                                }
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "m"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "sourceType": "script",
+        "directives": []
+    },
+    "comments": []
+}

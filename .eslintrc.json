@@ -1,0 +1,13 @@
+{
+    "rules": {
+        "no-useless-return": "off"
+    },
+    "extends": [
+        "plugin:node/recommended",
+        "plugin:putout/safe+align"
+    ],
+    "plugins": [
+        "node",
+        "putout"
+    ]
+}

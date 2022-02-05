@@ -1,0 +1,32 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ClassDeclaration",
+                "id": {
+                    "type": "Identifier",
+                    "name": "A"
+                },
+                "body": {
+                    "type": "ClassBody",
+                    "body": []
+                },
+                "superClass": null,
+                "implements": [
+                    {
+                        "type": "TSExpressionWithTypeArguments",
+                        "expression": {
+                            "type": "Identifier",
+                            "name": "B"
+                        }
+                    }
+                ]
+            }
+        ],
+        "sourceType": "script",
+        "directives": []
+    },
+    "comments": []
+}

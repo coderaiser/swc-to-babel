@@ -1,0 +1,49 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ClassDeclaration",
+                "id": {
+                    "type": "Identifier",
+                    "name": "Base"
+                },
+                "body": {
+                    "type": "ClassBody",
+                    "body": [
+                        {
+                            "type": "TSDeclareMethod",
+                            "key": {
+                                "type": "Identifier",
+                                "name": "getName"
+                            },
+                            "computed": false,
+                            "static": false,
+                            "kind": "method",
+                            "override": false,
+                            "abstract": true,
+                            "generator": false,
+                            "async": false,
+                            "params": [],
+                            "id": null,
+                            "returnType": {
+                                "type": "TSTypeAnnotation",
+                                "typeAnnotation": {
+                                    "type": "TSStringKeyword"
+                                }
+                            },
+                            "trailingComments": [],
+                            "leadingComments": [],
+                            "innerComments": []
+                        }
+                    ]
+                },
+                "superClass": null
+            }
+        ],
+        "sourceType": "script",
+        "directives": []
+    },
+    "comments": []
+}

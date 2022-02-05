@@ -1,0 +1,97 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declare": false,
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "value": "hello",
+                            "optional": false,
+                            "typeAnnotation": null,
+                            "start": 6,
+                            "end": 11,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 6
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 11
+                                }
+                            }
+                        },
+                        "init": {
+                            "type": "StringLiteral",
+                            "value": "world",
+                            "hasEscape": false,
+                            "kind": {
+                                "type": "normal",
+                                "containsQuote": true
+                            },
+                            "start": 14,
+                            "end": 21,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 14
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 21
+                                }
+                            }
+                        },
+                        "definite": false,
+                        "start": 6,
+                        "end": 21,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 6
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 21
+                            }
+                        }
+                    }
+                ],
+                "start": 0,
+                "end": 22,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 2,
+                        "column": 0
+                    }
+                }
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "start": 0,
+        "end": 22,
+        "loc": {
+            "start": {
+                "line": 1,
+                "column": 0
+            },
+            "end": {
+                "line": 2,
+                "column": 0
+            }
+        }
+    },
+    "comments": []
+}

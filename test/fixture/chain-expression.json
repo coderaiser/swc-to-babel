@@ -1,0 +1,210 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "start": 0,
+        "end": 43,
+        "loc": {
+            "start": {
+                "line": 1,
+                "column": 0
+            },
+            "end": {
+                "line": 3,
+                "column": 0
+            }
+        },
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "start": 0,
+                "end": 21,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 21
+                    }
+                },
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 6,
+                        "end": 20,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 6
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 20
+                            }
+                        },
+                        "id": {
+                            "type": "Identifier",
+                            "start": 6,
+                            "end": 9,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 6
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 9
+                                }
+                            },
+                            "name": "bar"
+                        },
+                        "init": {
+                            "type": "OptionalMemberExpression",
+                            "start": 12,
+                            "end": 20,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 12
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 20
+                                }
+                            },
+                            "object": {
+                                "type": "Identifier",
+                                "start": 12,
+                                "end": 15,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 12
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 15
+                                    }
+                                },
+                                "name": "foo"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "start": 17,
+                                "end": 20,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 17
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 20
+                                    }
+                                },
+                                "name": "bar"
+                            },
+                            "computed": false,
+                            "optional": true,
+                            "trailingComments": [],
+                            "leadingComments": [],
+                            "innerComments": []
+                        }
+                    }
+                ],
+                "kind": "const"
+            },
+            {
+                "type": "VariableDeclaration",
+                "start": 22,
+                "end": 42,
+                "loc": {
+                    "start": {
+                        "line": 2,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 2,
+                        "column": 20
+                    }
+                },
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 28,
+                        "end": 41,
+                        "loc": {
+                            "start": {
+                                "line": 2,
+                                "column": 6
+                            },
+                            "end": {
+                                "line": 2,
+                                "column": 19
+                            }
+                        },
+                        "id": {
+                            "type": "Identifier",
+                            "start": 28,
+                            "end": 31,
+                            "loc": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 6
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 9
+                                }
+                            },
+                            "name": "baz"
+                        },
+                        "init": {
+                            "type": "CallExpression",
+                            "start": 34,
+                            "end": 41,
+                            "loc": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 12
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 19
+                                }
+                            },
+                            "callee": {
+                                "type": "Identifier",
+                                "start": 34,
+                                "end": 37,
+                                "loc": {
+                                    "start": {
+                                        "line": 2,
+                                        "column": 12
+                                    },
+                                    "end": {
+                                        "line": 2,
+                                        "column": 15
+                                    }
+                                },
+                                "name": "foo"
+                            },
+                            "arguments": [],
+                            "optional": true,
+                            "stype": "OptionalCallExpression",
+                            "trailingComments": [],
+                            "leadingComments": [],
+                            "innerComments": []
+                        }
+                    }
+                ],
+                "kind": "const"
+            }
+        ],
+        "sourceType": "module",
+        "directives": []
+    },
+    "comments": []
+}

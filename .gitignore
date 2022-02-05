@@ -1,0 +1,7 @@
+node_modules
+.nyc_output
+.idea
+*.swp
+yarn-error.log
+
+coverage

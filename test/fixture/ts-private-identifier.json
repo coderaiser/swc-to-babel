@@ -1,0 +1,103 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ClassDeclaration",
+                "id": {
+                    "type": "Identifier",
+                    "name": "ClassWithPrivateField"
+                },
+                "body": {
+                    "type": "ClassBody",
+                    "body": [
+                        {
+                            "type": "ClassPrivateProperty",
+                            "key": {
+                                "type": "PrivateName",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "privateField"
+                                }
+                            },
+                            "value": null,
+                            "computed": false,
+                            "static": false,
+                            "declare": false,
+                            "override": false
+                        },
+                        {
+                            "type": "ClassMethod",
+                            "kind": "constructor",
+                            "key": {
+                                "type": "Identifier",
+                                "name": "constructor"
+                            },
+                            "params": [],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                                "type": "MemberExpression",
+                                                "object": {
+                                                    "type": "ThisExpression"
+                                                },
+                                                "property": {
+                                                    "type": "PrivateName",
+                                                    "id": {
+                                                        "type": "Identifier",
+                                                        "name": "privateField"
+                                                    },
+                                                    "trailingComments": [],
+                                                    "leadingComments": [],
+                                                    "innerComments": []
+                                                },
+                                                "computed": false,
+                                                "optional": false
+                                            },
+                                            "right": {
+                                                "type": "NumericLiteral",
+                                                "value": 5,
+                                                "raw": "5",
+                                                "extra": {
+                                                    "raw": "5"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "computed": false,
+                            "static": false,
+                            "generator": false,
+                            "async": false,
+                            "trailingComments": [],
+                            "leadingComments": [],
+                            "innerComments": [],
+                            "expression": false
+                        }
+                    ]
+                },
+                "superClass": null,
+                "implements": [
+                    {
+                        "type": "TSExpressionWithTypeArguments",
+                        "expression": {
+                            "type": "Identifier",
+                            "name": "B"
+                        }
+                    }
+                ]
+            }
+        ],
+        "sourceType": "script",
+        "directives": []
+    },
+    "comments": []
+}

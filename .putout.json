@@ -1,0 +1,12 @@
+{
+    "match": {
+        "example.js": {
+            "remove-console": "off",
+            "remove-unused-expressions": "off"
+        }
+    },
+    "ignore": [
+        "test/fixture"
+    ]
+}
+

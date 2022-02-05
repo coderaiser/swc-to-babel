@@ -1,0 +1,92 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "start": 0,
+        "end": 15,
+        "loc": {
+            "start": {
+                "line": 1,
+                "column": 0
+            },
+            "end": {
+                "line": 1,
+                "column": 15
+            }
+        },
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "start": 0,
+                "end": 15,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 15
+                    }
+                },
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 6,
+                        "end": 14,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 6
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 14
+                            }
+                        },
+                        "id": {
+                            "type": "Identifier",
+                            "start": 6,
+                            "end": 7,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 6
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 7
+                                }
+                            },
+                            "name": "t"
+                        },
+                        "init": {
+                            "type": "NullLiteral",
+                            "start": 10,
+                            "end": 14,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 10
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 14
+                                }
+                            },
+                            "value": null,
+                            "raw": "null",
+                            "extra": {
+                                "raw": "null"
+                            }
+                        }
+                    }
+                ],
+                "kind": "const"
+            }
+        ],
+        "sourceType": "module",
+        "directives": []
+    },
+    "comments": []
+}
