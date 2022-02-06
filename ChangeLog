@@ -1,3 +1,9 @@
+2022.02.06, v1.0.2
+
+feature:
+- swc-to-babel: rm unused
+
+
 2022.02.05, v1.0.1
 
 fix:
