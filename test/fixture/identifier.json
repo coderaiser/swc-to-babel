@@ -1,0 +1,155 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "ArrowFunctionExpression",
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "typeAnnotation": null,
+                            "start": 1,
+                            "end": 9,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 9
+                                }
+                            },
+                            "name": "__args__a"
+                        }
+                    ],
+                    "body": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "object": {
+                                "type": "Identifier",
+                                "start": 1,
+                                "end": 3,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 3
+                                    }
+                                },
+                                "name": "__a"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "start": 1,
+                                "end": 3,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 1
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 3
+                                    }
+                                },
+                                "name": "__b"
+                            },
+                            "start": 1,
+                            "end": 7,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 1
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 7
+                                }
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "spread": null,
+                                "expression": {
+                                    "type": "Identifier",
+                                    "span": {
+                                        "start": 47,
+                                        "end": 56,
+                                        "ctxt": 0
+                                    },
+                                    "value": "__args__a",
+                                    "optional": false
+                                }
+                            }
+                        ],
+                        "typeArguments": null,
+                        "start": 1,
+                        "end": 18,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 1
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 18
+                            }
+                        }
+                    },
+                    "async": false,
+                    "generator": false,
+                    "typeParameters": null,
+                    "returnType": null,
+                    "start": 1,
+                    "end": 33,
+                    "loc": {
+                        "start": {
+                            "line": 1,
+                            "column": 1
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 33
+                        }
+                    }
+                },
+                "start": 1,
+                "end": 34,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 1
+                    },
+                    "end": {
+                        "line": 2,
+                        "column": 0
+                    }
+                }
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "start": 1,
+        "end": 34,
+        "loc": {
+            "start": {
+                "line": 1,
+                "column": 1
+            },
+            "end": {
+                "line": 2,
+                "column": 0
+            }
+        },
+        "sourceType": "module"
+    },
+    "comments": []
+}

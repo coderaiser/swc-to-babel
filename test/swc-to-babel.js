@@ -42,9 +42,11 @@ const readJSON = (a) => require(`${fixtureDir}/${a}`);
 const fixture = {
     ast: {
         swcModule: readJSON('swc-module.json'),
+        identifier: readJSON('identifier.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
+        identifier: readJS('identifier.js'),
     },
 };
 
@@ -55,5 +57,15 @@ test('estree-to-babel: swc: parse: cwcModule', (t) => {
     update('swc-module', result);
     
     t.jsonEqual(result, fixture.ast.swcModule);
+    t.end();
+});
+
+test('estree-to-babel: swc: parse: identifier', (t) => {
+    const ast = swc.parseSync(fixture.js.identifier);
+    const result = swcToBabel(ast, fixture.js.identifier);
+    
+    update('identifier', result);
+    
+    t.jsonEqual(result, fixture.ast.identifier);
     t.end();
 });
