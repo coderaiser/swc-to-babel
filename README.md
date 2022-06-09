@@ -42,7 +42,7 @@ const swc = require('@swc/core');
 const toBabel = require('swc-to-babel');
 const traverse = require('@babel/traverse').default;
 
-const ast = toBabel(swc.parse(`
+const ast = toBabel(swc.parseSync(`
     const f = ({a}) => a;
 `));
 
