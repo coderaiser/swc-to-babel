@@ -1,0 +1,35 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "ArrowFunctionExpression",
+                    "params": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "start": 103,
+                        "end": 105,
+                        "body": []
+                    },
+                    "async": false,
+                    "generator": false,
+                    "typeParameters": null,
+                    "returnType": null,
+                    "start": 97,
+                    "end": 105
+                },
+                "start": 97,
+                "end": 106
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "start": 97,
+        "end": 106,
+        "sourceType": "module"
+    },
+    "comments": []
+}

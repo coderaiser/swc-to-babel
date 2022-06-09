@@ -13,16 +13,16 @@
                         "id": {
                             "type": "Identifier",
                             "typeAnnotation": null,
-                            "start": 1,
-                            "end": 5,
+                            "start": 7,
+                            "end": 12,
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 1
+                                    "column": 7
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 5
+                                    "column": 11
                                 }
                             },
                             "name": "hello"
@@ -31,38 +31,38 @@
                             "type": "StringLiteral",
                             "value": "world",
                             "raw": "'world'",
-                            "start": 1,
-                            "end": 7,
+                            "start": 15,
+                            "end": 22,
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 1
+                                    "column": 15
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 7
+                                    "column": 21
                                 }
                             },
                             "extra": {
                                 "raw": "'world'"
                             }
                         },
-                        "start": 1,
-                        "end": 15,
+                        "start": 7,
+                        "end": 22,
                         "loc": {
                             "start": {
                                 "line": 1,
-                                "column": 1
+                                "column": 7
                             },
                             "end": {
                                 "line": 1,
-                                "column": 15
+                                "column": 21
                             }
                         }
                     }
                 ],
                 "start": 1,
-                "end": 22,
+                "end": 23,
                 "loc": {
                     "start": {
                         "line": 1,
@@ -78,7 +78,7 @@
         "interpreter": null,
         "directives": [],
         "start": 1,
-        "end": 22,
+        "end": 23,
         "loc": {
             "start": {
                 "line": 1,

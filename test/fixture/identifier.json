@@ -11,16 +11,16 @@
                         {
                             "type": "Identifier",
                             "typeAnnotation": null,
-                            "start": 1,
-                            "end": 9,
+                            "start": 26,
+                            "end": 35,
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 1
+                                    "column": 26
                                 },
                                 "end": {
-                                    "line": 1,
-                                    "column": 9
+                                    "line": 2,
+                                    "column": 0
                                 }
                             },
                             "name": "__args__a"
@@ -32,126 +32,46 @@
                             "type": "MemberExpression",
                             "object": {
                                 "type": "Identifier",
-                                "start": 1,
-                                "end": 3,
-                                "loc": {
-                                    "start": {
-                                        "line": 1,
-                                        "column": 1
-                                    },
-                                    "end": {
-                                        "line": 1,
-                                        "column": 3
-                                    }
-                                },
+                                "start": 40,
+                                "end": 43,
                                 "name": "__a"
                             },
                             "property": {
                                 "type": "Identifier",
-                                "start": 1,
-                                "end": 3,
-                                "loc": {
-                                    "start": {
-                                        "line": 1,
-                                        "column": 1
-                                    },
-                                    "end": {
-                                        "line": 1,
-                                        "column": 3
-                                    }
-                                },
+                                "start": 44,
+                                "end": 47,
                                 "name": "__b"
                             },
-                            "start": 1,
-                            "end": 7,
-                            "loc": {
-                                "start": {
-                                    "line": 1,
-                                    "column": 1
-                                },
-                                "end": {
-                                    "line": 1,
-                                    "column": 7
-                                }
-                            }
+                            "start": 40,
+                            "end": 47
                         },
                         "arguments": [
                             {
                                 "type": "Identifier",
-                                "start": 1,
-                                "end": 9,
-                                "loc": {
-                                    "start": {
-                                        "line": 1,
-                                        "column": 1
-                                    },
-                                    "end": {
-                                        "line": 1,
-                                        "column": 9
-                                    }
-                                },
+                                "start": 48,
+                                "end": 57,
                                 "name": "__args__a"
                             }
                         ],
                         "typeArguments": null,
-                        "start": 1,
-                        "end": 18,
-                        "loc": {
-                            "start": {
-                                "line": 1,
-                                "column": 1
-                            },
-                            "end": {
-                                "line": 1,
-                                "column": 18
-                            }
-                        }
+                        "start": 40,
+                        "end": 58
                     },
                     "async": false,
                     "generator": false,
                     "typeParameters": null,
                     "returnType": null,
-                    "start": 1,
-                    "end": 33,
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 1
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 33
-                        }
-                    }
+                    "start": 25,
+                    "end": 58
                 },
-                "start": 1,
-                "end": 34,
-                "loc": {
-                    "start": {
-                        "line": 1,
-                        "column": 1
-                    },
-                    "end": {
-                        "line": 2,
-                        "column": 0
-                    }
-                }
+                "start": 25,
+                "end": 59
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 1,
-        "end": 34,
-        "loc": {
-            "start": {
-                "line": 1,
-                "column": 1
-            },
-            "end": {
-                "line": 2,
-                "column": 0
-            }
-        },
+        "start": 25,
+        "end": 59,
         "sourceType": "module"
     },
     "comments": []

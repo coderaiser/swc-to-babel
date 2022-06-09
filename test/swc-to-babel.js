@@ -44,11 +44,13 @@ const fixture = {
         swcModule: readJSON('swc-module.json'),
         identifier: readJSON('identifier.json'),
         blockStatement: readJSON('block-statement.json'),
+        position: readJSON('position.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
         identifier: readJS('identifier.js'),
         blockStatement: readJS('block-statement.js'),
+        position: readJS('position.js'),
     },
 };
 
@@ -82,12 +84,14 @@ test('estree-to-babel: swc: parse: BlockStatement', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: parse: babel', (t) => {
-    const ast = swc.parseSync(fixture.js.identifier);
-    const result = swcToBabel(ast, fixture.js.identifier);
-    //const babelAst = babel.parse(fixture.js.identifier);
+test('estree-to-babel: swc: parse: position', (t) => {
+    const name = 'position';
+    const ast = swc.parseSync(fixture.js[name]);
+    const result = swcToBabel(ast, fixture.js[name]);
     
-    t.jsonEqual(result, fixture.ast.identifier);
+    update(name, result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
     t.end();
 });
 
