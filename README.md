@@ -23,6 +23,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `loc` with `line` and `column` instead of `span`;
 - `StringLiteral` has no `kind` an `hasEscape`;
 - `Identifier` has no `optional` and uses `name` instead of `value`;
+- `BlockStatement` has `body` instead of `stmts`;
 - `VariableDeclarator` has no `optional` and `definite`;
 - `CallExpression` has no `spread` and `expression` properties in `arguments`;
 - etc...

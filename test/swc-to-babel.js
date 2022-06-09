@@ -8,7 +8,6 @@ const {
 
 const {extend} = require('supertape');
 const swc = require('@swc/core');
-const babel = require('@babel/parser');
 
 const swcToBabel = require('..');
 
@@ -44,10 +43,12 @@ const fixture = {
     ast: {
         swcModule: readJSON('swc-module.json'),
         identifier: readJSON('identifier.json'),
+        blockStatement: readJSON('block-statement.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
         identifier: readJS('identifier.js'),
+        blockStatement: readJS('block-statement.js'),
     },
 };
 
@@ -68,6 +69,16 @@ test('estree-to-babel: swc: parse: identifier', (t) => {
     update('identifier', result);
     
     t.jsonEqual(result, fixture.ast.identifier);
+    t.end();
+});
+
+test('estree-to-babel: swc: parse: BlockStatement', (t) => {
+    const ast = swc.parseSync(fixture.js.blockStatement);
+    const result = swcToBabel(ast, fixture.js.blockStatement);
+    
+    update('block-statement', result);
+    
+    t.jsonEqual(result, fixture.ast.blockStatement);
     t.end();
 });
 
