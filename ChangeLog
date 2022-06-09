@@ -1,3 +1,10 @@
+2022.06.09, v1.5.0
+
+feature:
+- swc-to-babel: TemplateElement
+- package: eslint-plugin-putout v15.6.0
+
+
 2022.06.09, v1.4.0
 
 feature:
