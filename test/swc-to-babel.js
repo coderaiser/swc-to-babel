@@ -8,6 +8,7 @@ const {
 
 const {extend} = require('supertape');
 const swc = require('@swc/core');
+const babel = require('@babel/parser');
 
 const swcToBabel = require('..');
 
@@ -65,6 +66,15 @@ test('estree-to-babel: swc: parse: identifier', (t) => {
     const result = swcToBabel(ast, fixture.js.identifier);
     
     update('identifier', result);
+    
+    t.jsonEqual(result, fixture.ast.identifier);
+    t.end();
+});
+
+test('estree-to-babel: swc: parse: babel', (t) => {
+    const ast = swc.parseSync(fixture.js.identifier);
+    const result = swcToBabel(ast, fixture.js.identifier);
+    //const babelAst = babel.parse(fixture.js.identifier);
     
     t.jsonEqual(result, fixture.ast.identifier);
     t.end();

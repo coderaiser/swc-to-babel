@@ -77,17 +77,20 @@
                         },
                         "arguments": [
                             {
-                                "spread": null,
-                                "expression": {
-                                    "type": "Identifier",
-                                    "span": {
-                                        "start": 48,
-                                        "end": 57,
-                                        "ctxt": 0
+                                "type": "Identifier",
+                                "start": 1,
+                                "end": 9,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 1
                                     },
-                                    "value": "__args__a",
-                                    "optional": false
-                                }
+                                    "end": {
+                                        "line": 1,
+                                        "column": 9
+                                    }
+                                },
+                                "name": "__args__a"
                             }
                         ],
                         "typeArguments": null,
