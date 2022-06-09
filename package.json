@@ -45,7 +45,7 @@
     "eslint-plugin-putout": "^13.6.0",
     "espree": "^9.0.0",
     "estree-util-attach-comments": "^2.0.0",
-    "madrun": "^8.0.1",
+    "madrun": "^9.0.4",
     "nodemon": "^2.0.2",
     "putout": "^24.2.2",
     "supertape": "^6.0.5",
