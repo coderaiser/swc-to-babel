@@ -30,6 +30,7 @@
                         "init": {
                             "type": "StringLiteral",
                             "value": "world",
+                            "raw": "'world'",
                             "start": 1,
                             "end": 7,
                             "loc": {
@@ -42,7 +43,9 @@
                                     "column": 7
                                 }
                             },
-                            "extra": {}
+                            "extra": {
+                                "raw": "'world'"
+                            }
                         },
                         "start": 1,
                         "end": 15,
