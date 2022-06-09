@@ -69,3 +69,4 @@ test('estree-to-babel: swc: parse: identifier', (t) => {
     t.jsonEqual(result, fixture.ast.identifier);
     t.end();
 });
+
