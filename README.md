@@ -25,7 +25,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `Identifier` has no `optional` and uses `name` instead of `value`;
 - `BlockStatement` has `body` instead of `stmts`;
 - `VariableDeclarator` has no `optional` and `definite`;
-- `CallExpression` has no `spread` and `expression` properties in `arguments`;
+- `CallExpression` has no `typeArguments`, `spread` and `expression` properties in `arguments`;
 - `TemplateElement` has `value` field with `raw` and `cooked`;
 - TypeScript ast nodes has prefix `TS` instead of `Ts`;
 - etc...
