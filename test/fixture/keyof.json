@@ -54,11 +54,6 @@
                         "type": "TSTypeParameter",
                         "name": {
                             "type": "Identifier",
-                            "span": {
-                                "start": 121,
-                                "end": 124,
-                                "ctxt": 0
-                            },
                             "name": "__b"
                         },
                         "in": false,

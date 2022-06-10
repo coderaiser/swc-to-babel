@@ -1,0 +1,57 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ClassDeclaration",
+                "body": {
+                    "type": "ClassBody",
+                    "body": [
+                        {
+                            "type": "ClassMethod",
+                            "key": {
+                                "type": "Identifier",
+                                "start": 251,
+                                "end": 257,
+                                "name": "render"
+                            },
+                            "kind": "method",
+                            "start": 251,
+                            "end": 261,
+                            "params": [],
+                            "body": {
+                                "type": "BlockStatement",
+                                "start": 259,
+                                "end": 261,
+                                "body": []
+                            },
+                            "generator": false,
+                            "async": false
+                        }
+                    ]
+                },
+                "superClass": {
+                    "type": "Identifier",
+                    "start": 240,
+                    "end": 249,
+                    "name": "Component"
+                },
+                "start": 219,
+                "end": 262,
+                "id": {
+                    "type": "Identifier",
+                    "start": 225,
+                    "end": 231,
+                    "name": "Button"
+                }
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "start": 219,
+        "end": 262,
+        "sourceType": "module"
+    },
+    "comments": []
+}
