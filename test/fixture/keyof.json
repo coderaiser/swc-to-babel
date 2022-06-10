@@ -5,22 +5,17 @@
         "body": [
             {
                 "type": "TSTypeAliasDeclaration",
-                "declare": false,
                 "id": {
                     "type": "Identifier",
                     "start": 113,
                     "end": 116,
                     "name": "__a"
                 },
-                "typeParams": null,
                 "typeAnnotation": {
                     "type": "TSMappedType",
-                    "readonly": null,
                     "nameType": null,
-                    "optional": null,
                     "typeAnnotation": {
                         "type": "TSIndexedAccessType",
-                        "readonly": false,
                         "objectType": {
                             "type": "TSTypeReference",
                             "typeName": {
@@ -29,7 +24,6 @@
                                 "end": 143,
                                 "name": "__c"
                             },
-                            "typeParams": null,
                             "start": 140,
                             "end": 143
                         },
@@ -41,7 +35,6 @@
                                 "end": 147,
                                 "name": "__b"
                             },
-                            "typeParams": null,
                             "start": 144,
                             "end": 147
                         },
@@ -52,15 +45,9 @@
                     "end": 150,
                     "typeParameter": {
                         "type": "TSTypeParameter",
-                        "name": {
-                            "type": "Identifier",
-                            "name": "__b"
-                        },
-                        "in": false,
-                        "out": false,
+                        "name": "__b",
                         "constraint": {
                             "type": "TSTypeOperator",
-                            "op": "keyof",
                             "typeAnnotation": {
                                 "type": "TSTypeReference",
                                 "typeName": {
@@ -69,14 +56,13 @@
                                     "end": 137,
                                     "name": "__c"
                                 },
-                                "typeParams": null,
                                 "start": 134,
                                 "end": 137
                             },
                             "start": 128,
-                            "end": 137
+                            "end": 137,
+                            "operator": "keyof"
                         },
-                        "default": null,
                         "start": 121,
                         "end": 137
                     }

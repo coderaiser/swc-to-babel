@@ -37,6 +37,9 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - [`MemberExpression`](https://github.com/coderaiser/putout/blob/master/docs/the-book-of-ast.md#memberexpression) has `computed` property instead of `Computed` node in `property` field;
 - `NewExpression` has no untyped node with a `apread` property in `arguments`;
 - `Function` has no `typeParameters`;
+- `TSTypeReference` has no `typeParams` field;
+- `TSTypeOperator` has `operator` instead of `op`;
+- `TSTypeParameter` has a field `name` which is `string` instead of `Identifier`;
 - etc...
 
 `swc-to-babel` aims to smooth this differences.

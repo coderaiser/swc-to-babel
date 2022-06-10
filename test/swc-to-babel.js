@@ -53,6 +53,7 @@ const fixture = {
         memberExpression: readJSON('member-expression.json'),
         spread: readJSON('spread.json'),
         call: readJSON('call.json'),
+        typeAliasDeclaration: readJSON('type-alias-declaration.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -67,10 +68,11 @@ const fixture = {
         memberExpression: readJS('member-expression.js'),
         spread: readJS('spread.js'),
         call: readJS('call.js'),
+        typeAliasDeclaration: readJS('type-alias-declaration.ts'),
     },
 };
 
-test('estree-to-babel: swc: parse: cwcModule', (t) => {
+test('swc-to-babel: swc: parse: cwcModule', (t) => {
     const ast = swc.parseSync(fixture.js.swcModule);
     const result = swcToBabel(ast, fixture.js.swcModule);
     
@@ -80,7 +82,7 @@ test('estree-to-babel: swc: parse: cwcModule', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: parse: identifier', (t) => {
+test('swc-to-babel: swc: parse: identifier', (t) => {
     const ast = swc.parseSync(fixture.js.identifier);
     const result = swcToBabel(ast, fixture.js.identifier);
     
@@ -90,7 +92,7 @@ test('estree-to-babel: swc: parse: identifier', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: parse: BlockStatement', (t) => {
+test('swc-to-babel: swc: parse: BlockStatement', (t) => {
     const ast = swc.parseSync(fixture.js.blockStatement);
     const result = swcToBabel(ast, fixture.js.blockStatement);
     
@@ -100,7 +102,7 @@ test('estree-to-babel: swc: parse: BlockStatement', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: parse: position', (t) => {
+test('swc-to-babel: swc: parse: position', (t) => {
     const name = 'position';
     const ast = swc.parseSync(fixture.js[name]);
     const result = swcToBabel(ast, fixture.js[name]);
@@ -111,7 +113,7 @@ test('estree-to-babel: swc: parse: position', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: parse: keyof', (t) => {
+test('swc-to-babel: swc: parse: keyof', (t) => {
     const name = 'keyof';
     const ast = swc.parseSync(fixture.js[name], {
         syntax: 'typescript',
@@ -124,7 +126,7 @@ test('estree-to-babel: swc: parse: keyof', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: parse: template-element', (t) => {
+test('swc-to-babel: swc: parse: template-element', (t) => {
     const name = 'templateElement';
     const ast = swc.parseSync(fixture.js[name], {
         syntax: 'typescript',
@@ -137,7 +139,7 @@ test('estree-to-babel: swc: parse: template-element', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: export', (t) => {
+test('swc-to-babel: swc: export', (t) => {
     const name = 'export';
     const ast = swc.parseSync(fixture.js[name], {
         syntax: 'typescript',
@@ -150,7 +152,7 @@ test('estree-to-babel: swc: export', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: parens', (t) => {
+test('swc-to-babel: swc: parens', (t) => {
     const name = 'parens';
     const ast = swc.parseSync(fixture.js[name], {
         syntax: 'typescript',
@@ -163,7 +165,7 @@ test('estree-to-babel: swc: parens', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: ClassMethod', (t) => {
+test('swc-to-babel: swc: ClassMethod', (t) => {
     const name = 'classMethod';
     const ast = swc.parseSync(fixture.js[name], {
         syntax: 'typescript',
@@ -176,7 +178,7 @@ test('estree-to-babel: swc: ClassMethod', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: member-expression', (t) => {
+test('swc-to-babel: swc: member-expression', (t) => {
     const name = 'memberExpression';
     const ast = swc.parseSync(fixture.js[name], {
         syntax: 'typescript',
@@ -189,7 +191,7 @@ test('estree-to-babel: swc: member-expression', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: spread', (t) => {
+test('swc-to-babel: swc: spread', (t) => {
     const name = 'spread';
     const ast = swc.parseSync(fixture.js[name], {
         syntax: 'typescript',
@@ -202,7 +204,7 @@ test('estree-to-babel: swc: spread', (t) => {
     t.end();
 });
 
-test('estree-to-babel: swc: call', (t) => {
+test('swc-to-babel: swc: call', (t) => {
     const name = 'call';
     const ast = swc.parseSync(fixture.js[name], {
         syntax: 'typescript',
@@ -210,6 +212,19 @@ test('estree-to-babel: swc: call', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('call', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('swc-to-babel: swc: type-alias-declaration', (t) => {
+    const name = 'typeAliasDeclaration';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('type-alias-declaration', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();

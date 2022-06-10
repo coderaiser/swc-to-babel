@@ -1,0 +1,150 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "TSTypeAliasDeclaration",
+                "id": {
+                    "type": "Identifier",
+                    "start": 464,
+                    "end": 465,
+                    "name": "A"
+                },
+                "typeAnnotation": {
+                    "type": "TSMappedType",
+                    "readonly": true,
+                    "nameType": null,
+                    "typeAnnotation": {
+                        "type": "TSIndexedAccessType",
+                        "objectType": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                                "type": "Identifier",
+                                "start": 504,
+                                "end": 508,
+                                "name": "Type"
+                            },
+                            "start": 504,
+                            "end": 508
+                        },
+                        "indexType": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                                "type": "Identifier",
+                                "start": 509,
+                                "end": 512,
+                                "name": "Key"
+                            },
+                            "start": 509,
+                            "end": 512
+                        },
+                        "start": 504,
+                        "end": 513
+                    },
+                    "start": 468,
+                    "end": 516,
+                    "typeParameter": {
+                        "type": "TSTypeParameter",
+                        "name": "Key",
+                        "constraint": {
+                            "type": "TSTypeOperator",
+                            "typeAnnotation": {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                    "type": "Identifier",
+                                    "start": 497,
+                                    "end": 501,
+                                    "name": "Type"
+                                },
+                                "start": 497,
+                                "end": 501
+                            },
+                            "start": 491,
+                            "end": 501,
+                            "operator": "keyof"
+                        },
+                        "start": 484,
+                        "end": 501
+                    }
+                },
+                "start": 459,
+                "end": 516
+            },
+            {
+                "type": "TSTypeAliasDeclaration",
+                "id": {
+                    "type": "Identifier",
+                    "start": 523,
+                    "end": 526,
+                    "name": "__a"
+                },
+                "typeAnnotation": {
+                    "type": "TSMappedType",
+                    "nameType": null,
+                    "optional": true,
+                    "typeAnnotation": {
+                        "type": "TSIndexedAccessType",
+                        "objectType": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                                "type": "Identifier",
+                                "start": 551,
+                                "end": 554,
+                                "name": "__c"
+                            },
+                            "start": 551,
+                            "end": 554
+                        },
+                        "indexType": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                                "type": "Identifier",
+                                "start": 555,
+                                "end": 558,
+                                "name": "__b"
+                            },
+                            "start": 555,
+                            "end": 558
+                        },
+                        "start": 551,
+                        "end": 559
+                    },
+                    "start": 529,
+                    "end": 561,
+                    "typeParameter": {
+                        "type": "TSTypeParameter",
+                        "name": "__b",
+                        "constraint": {
+                            "type": "TSTypeOperator",
+                            "typeAnnotation": {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                    "type": "Identifier",
+                                    "start": 544,
+                                    "end": 547,
+                                    "name": "__c"
+                                },
+                                "start": 544,
+                                "end": 547
+                            },
+                            "start": 538,
+                            "end": 547,
+                            "operator": "keyof"
+                        },
+                        "start": 531,
+                        "end": 547
+                    }
+                },
+                "start": 518,
+                "end": 561
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "start": 459,
+        "end": 561,
+        "sourceType": "module"
+    },
+    "comments": []
+}
