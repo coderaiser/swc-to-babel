@@ -6,13 +6,11 @@
             {
                 "type": "VariableDeclaration",
                 "kind": "const",
-                "declare": false,
                 "declarations": [
                     {
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
-                            "typeAnnotation": null,
                             "start": 7,
                             "end": 12,
                             "loc": {

@@ -10,7 +10,6 @@
                     "params": [
                         {
                             "type": "Identifier",
-                            "typeAnnotation": null,
                             "start": 26,
                             "end": 35,
                             "loc": {
