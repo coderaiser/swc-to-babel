@@ -1,3 +1,10 @@
+2022.06.10, v1.7.1
+
+feature:
+- swc-to-babel: improve support of typeAnnotation in Identifiers
+- swc-to-babel: add support of ExportNamedDeclaration and ExportDefaultDeclaration
+
+
 2022.06.10, v1.7.0
 
 feature:
