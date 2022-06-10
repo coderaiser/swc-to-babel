@@ -22,7 +22,8 @@
                             "name": "equal"
                         },
                         "start": 152,
-                        "end": 160
+                        "end": 160,
+                        "computed": false
                     },
                     "arguments": [
                         {

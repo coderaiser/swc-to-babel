@@ -50,6 +50,7 @@ const fixture = {
         export: readJSON('export.json'),
         parens: readJSON('parens.json'),
         classMethod: readJSON('class-method.json'),
+        memberExpression: readJSON('member-expression.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -61,6 +62,7 @@ const fixture = {
         export: readJS('export.js'),
         parens: readJS('parens.js'),
         classMethod: readJS('class-method.js'),
+        memberExpression: readJS('member-expression.js'),
     },
 };
 
@@ -165,6 +167,19 @@ test('estree-to-babel: swc: ClassMethod', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('class-method', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('estree-to-babel: swc: member-expression', (t) => {
+    const name = 'memberExpression';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('member-expression', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();

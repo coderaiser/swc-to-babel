@@ -34,6 +34,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - Has no `ParenthesisExpression`;
 - `ClassDeclaration` uses `id` instead of `identifier`, has `ClassBody`;
 - `ClassMethod` uses `static` instead of `isStatic`;
+- `MemberExpression` has `computed` property instead of `Computed` node in `property` field;
 - etc...
 
 `swc-to-babel` aims to smooth this differences.

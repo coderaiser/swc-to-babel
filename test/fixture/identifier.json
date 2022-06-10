@@ -42,7 +42,8 @@
                                 "name": "__b"
                             },
                             "start": 40,
-                            "end": 47
+                            "end": 47,
+                            "computed": false
                         },
                         "arguments": [
                             {
