@@ -1,0 +1,44 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "ArrayExpression",
+                    "elements": [
+                        {
+                            "type": "NewExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "start": 283,
+                                "end": 286,
+                                "name": "Set"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "Identifier",
+                                    "start": 287,
+                                    "end": 290,
+                                    "name": "__a"
+                                }
+                            ],
+                            "typeArguments": null
+                        }
+                    ],
+                    "start": 275,
+                    "end": 292
+                },
+                "start": 275,
+                "end": 293
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "start": 275,
+        "end": 293,
+        "sourceType": "module"
+    },
+    "comments": []
+}

@@ -51,6 +51,7 @@ const fixture = {
         parens: readJSON('parens.json'),
         classMethod: readJSON('class-method.json'),
         memberExpression: readJSON('member-expression.json'),
+        spread: readJSON('spread.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -63,6 +64,7 @@ const fixture = {
         parens: readJS('parens.js'),
         classMethod: readJS('class-method.js'),
         memberExpression: readJS('member-expression.js'),
+        spread: readJS('spread.js'),
     },
 };
 
@@ -180,6 +182,19 @@ test('estree-to-babel: swc: member-expression', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('member-expression', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('estree-to-babel: swc: spread', (t) => {
+    const name = 'spread';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('spread', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();
