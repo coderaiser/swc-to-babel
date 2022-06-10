@@ -1,0 +1,204 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "Identifier",
+                        "start": 335,
+                        "end": 339,
+                        "name": "test"
+                    },
+                    "arguments": [
+                        {
+                            "type": "StringLiteral",
+                            "value": "hello world",
+                            "raw": "'hello world'",
+                            "start": 340,
+                            "end": 353,
+                            "extra": {
+                                "raw": "'hello world'"
+                            }
+                        },
+                        {
+                            "type": "ArrowFunctionExpression",
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "start": 356,
+                                    "end": 357,
+                                    "name": "t"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "start": 362,
+                                "end": 455,
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "start": 368,
+                                                    "end": 375,
+                                                    "name": "emitter"
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "start": 376,
+                                                    "end": 378,
+                                                    "name": "on"
+                                                },
+                                                "start": 368,
+                                                "end": 378,
+                                                "computed": false
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "TemplateLiteral",
+                                                    "expressions": [],
+                                                    "quasis": [
+                                                        {
+                                                            "type": "TemplateElement",
+                                                            "start": 380,
+                                                            "end": 388,
+                                                            "value": {
+                                                                "cooked": "progress",
+                                                                "raw": "progress"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "start": 379,
+                                                    "end": 389,
+                                                    "extra": {}
+                                                },
+                                                {
+                                                    "type": "ArrowFunctionExpression",
+                                                    "params": [],
+                                                    "body": {
+                                                        "type": "BlockStatement",
+                                                        "start": 397,
+                                                        "end": 451,
+                                                        "body": [
+                                                            {
+                                                                "type": "ExpressionStatement",
+                                                                "expression": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "start": 406,
+                                                                            "end": 407,
+                                                                            "name": "t"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Identifier",
+                                                                            "start": 408,
+                                                                            "end": 413,
+                                                                            "name": "equal"
+                                                                        },
+                                                                        "start": 406,
+                                                                        "end": 413,
+                                                                        "computed": false
+                                                                    },
+                                                                    "arguments": [
+                                                                        {
+                                                                            "type": "Identifier",
+                                                                            "start": 414,
+                                                                            "end": 422,
+                                                                            "name": "progress"
+                                                                        },
+                                                                        {
+                                                                            "type": "NumericLiteral",
+                                                                            "value": 100,
+                                                                            "raw": "100",
+                                                                            "start": 424,
+                                                                            "end": 427,
+                                                                            "extra": {
+                                                                                "raw": "100"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "start": 406,
+                                                                    "end": 428
+                                                                },
+                                                                "start": 406,
+                                                                "end": 429
+                                                            },
+                                                            {
+                                                                "type": "ExpressionStatement",
+                                                                "expression": {
+                                                                    "type": "CallExpression",
+                                                                    "callee": {
+                                                                        "type": "MemberExpression",
+                                                                        "object": {
+                                                                            "type": "Identifier",
+                                                                            "start": 437,
+                                                                            "end": 438,
+                                                                            "name": "t"
+                                                                        },
+                                                                        "property": {
+                                                                            "type": "Identifier",
+                                                                            "start": 439,
+                                                                            "end": 442,
+                                                                            "name": "end"
+                                                                        },
+                                                                        "start": 437,
+                                                                        "end": 442,
+                                                                        "computed": false
+                                                                    },
+                                                                    "arguments": [],
+                                                                    "start": 437,
+                                                                    "end": 444
+                                                                },
+                                                                "start": 437,
+                                                                "end": 445
+                                                            }
+                                                        ]
+                                                    },
+                                                    "async": false,
+                                                    "generator": false,
+                                                    "returnType": null,
+                                                    "start": 391,
+                                                    "end": 451
+                                                }
+                                            ],
+                                            "start": 368,
+                                            "end": 452
+                                        },
+                                        "start": 368,
+                                        "end": 453
+                                    }
+                                ]
+                            },
+                            "async": false,
+                            "generator": false,
+                            "returnType": null,
+                            "start": 355,
+                            "end": 455
+                        }
+                    ],
+                    "start": 335,
+                    "end": 456
+                },
+                "start": 335,
+                "end": 457
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "start": 335,
+        "end": 457,
+        "sourceType": "module"
+    },
+    "comments": []
+}

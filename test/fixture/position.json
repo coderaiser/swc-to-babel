@@ -16,7 +16,6 @@
                     },
                     "async": false,
                     "generator": false,
-                    "typeParameters": null,
                     "returnType": null,
                     "start": 97,
                     "end": 105

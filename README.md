@@ -22,7 +22,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `Program` instead of `Module`;
 - `loc` with `line` and `column` instead of `span`;
 - `StringLiteral` has no `kind` an `hasEscape`;
-- `Identifier` has no `optional` and uses `name` instead of `value`;
+- [`Identifier`](https://github.com/coderaiser/putout/blob/master/docs/the-book-of-ast.md#identifier) has no `optional` and uses `name` instead of `value`;
 - `BlockStatement` has `body` instead of `stmts`;
 - `VariableDeclarator` has no `optional` and `definite`;
 - `CallExpression` has no `typeArguments`, `spread` and `expression` properties in `arguments`;
@@ -34,8 +34,9 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - Has no `ParenthesisExpression`;
 - `ClassDeclaration` uses `id` instead of `identifier`, has `ClassBody`;
 - `ClassMethod` uses `static` instead of `isStatic`;
-- `MemberExpression` has `computed` property instead of `Computed` node in `property` field;
+- [`MemberExpression`](https://github.com/coderaiser/putout/blob/master/docs/the-book-of-ast.md#memberexpression) has `computed` property instead of `Computed` node in `property` field;
 - `NewExpression` has no untyped node with a `apread` property in `arguments`;
+- `Function` has no `typeParameters`;
 - etc...
 
 `swc-to-babel` aims to smooth this differences.

@@ -42,7 +42,6 @@
                             },
                             "async": false,
                             "generator": false,
-                            "typeParameters": null,
                             "returnType": null,
                             "start": 71,
                             "end": 94
