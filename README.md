@@ -31,6 +31,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `ExportNamedDeclaration` instead of `ExportDeclaration`;
 - `ExportDefaultDeclaration` instead of `ExportDefaultExpression`;
 - `VariableDeclaration` has no `declare` field;
+- Has no `ParenthesisExpression`;
 - etc...
 
 `swc-to-babel` aims to smooth this differences.
