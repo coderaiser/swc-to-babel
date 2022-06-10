@@ -9,41 +9,26 @@
                     "type": "ArrayExpression",
                     "elements": [
                         {
-                            "expression": {
+                            "type": "SpreadElement",
+                            "argument": {
                                 "type": "NewExpression",
-                                "span": {
-                                    "start": 279,
-                                    "end": 291,
-                                    "ctxt": 0
-                                },
                                 "callee": {
                                     "type": "Identifier",
-                                    "span": {
-                                        "start": 283,
-                                        "end": 286,
-                                        "ctxt": 0
-                                    },
-                                    "value": "Set",
-                                    "optional": false
+                                    "start": 283,
+                                    "end": 286,
+                                    "name": "Set"
                                 },
                                 "arguments": [
                                     {
-                                        "spread": null,
-                                        "expression": {
-                                            "type": "Identifier",
-                                            "span": {
-                                                "start": 287,
-                                                "end": 290,
-                                                "ctxt": 0
-                                            },
-                                            "value": "__a",
-                                            "optional": false
-                                        }
+                                        "type": "Identifier",
+                                        "start": 287,
+                                        "end": 290,
+                                        "name": "__a"
                                     }
                                 ],
-                                "typeArguments": null
-                            },
-                            "type": "SpreadElement"
+                                "start": 279,
+                                "end": 291
+                            }
                         }
                     ],
                     "start": 275,
@@ -68,30 +53,22 @@
                             "type": "ArrayExpression",
                             "elements": [
                                 {
-                                    "expression": {
+                                    "type": "SpreadElement",
+                                    "argument": {
                                         "type": "Identifier",
-                                        "span": {
-                                            "start": 319,
-                                            "end": 320,
-                                            "ctxt": 0
-                                        },
-                                        "value": "a",
-                                        "optional": false
-                                    },
-                                    "type": "SpreadElement"
+                                        "start": 319,
+                                        "end": 320,
+                                        "name": "a"
+                                    }
                                 },
                                 {
-                                    "expression": {
+                                    "type": "SpreadElement",
+                                    "argument": {
                                         "type": "Identifier",
-                                        "span": {
-                                            "start": 329,
-                                            "end": 330,
-                                            "ctxt": 0
-                                        },
-                                        "value": "b",
-                                        "optional": false
-                                    },
-                                    "type": "SpreadElement"
+                                        "start": 329,
+                                        "end": 330,
+                                        "name": "b"
+                                    }
                                 }
                             ],
                             "start": 310,
