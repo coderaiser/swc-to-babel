@@ -47,6 +47,7 @@ const fixture = {
         position: readJSON('position.json'),
         keyof: readJSON('keyof.json'),
         templateElement: readJSON('template-element.json'),
+        export: readJSON('export.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -55,6 +56,7 @@ const fixture = {
         position: readJS('position.js'),
         keyof: readJS('keyof.js'),
         templateElement: readJS('template-element.js'),
+        export: readJS('export.js'),
     },
 };
 
@@ -120,6 +122,19 @@ test('estree-to-babel: swc: parse: template-element', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('template-element', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('estree-to-babel: swc: export', (t) => {
+    const name = 'export';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('export', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();
