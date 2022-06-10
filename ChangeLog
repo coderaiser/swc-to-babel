@@ -1,3 +1,9 @@
+2022.06.10, v1.8.0
+
+feature:
+- swc-to-babel: add support of ParenthesisExpression
+
+
 2022.06.10, v1.7.1
 
 feature:
