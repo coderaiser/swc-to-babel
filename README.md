@@ -30,6 +30,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - TypeScript ast nodes has prefix `TS` instead of `Ts`;
 - `ExportNamedDeclaration` instead of `ExportDeclaration`;
 - `ExportDefaultDeclaration` instead of `ExportDefaultExpression`;
+- `VariableDeclaration` has no `declare` field;
 - etc...
 
 `swc-to-babel` aims to smooth this differences.
