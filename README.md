@@ -43,7 +43,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `TSTypeParameter` has a field `name` which is `string` instead of `Identifier`;
 - `FunctionDeclaration` instead of `FunctionExpression` with `identifier` field;
 - `ImportDeclaration` has `importKind` instead of `typeOnly` field;
-- `ObjectProperty` instead of `KeyValuePatternProperty`;
+- `ObjectProperty` instead of `KeyValuePatternProperty` and `AssignmentPatternProperty`;
 - `ExportNamedDeclaration` has `exportKind`, `specifiers` and `assertions` fields;
 - `ExportSpecifier` has `local` which is never `null` instead of `orig`.
 - etc...

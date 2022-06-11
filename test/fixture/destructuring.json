@@ -21,7 +21,52 @@
                                     "value": {
                                         "type": "Identifier",
                                         "name": "world"
+                                    },
+                                    "shorthand": false
+                                }
+                            ],
+                            "typeAnnotation": null
+                        },
+                        "init": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "require"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "StringLiteral",
+                                    "value": "./hi",
+                                    "raw": "\"./hi\"",
+                                    "extra": {
+                                        "raw": "\"./hi\""
                                     }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "ObjectPattern",
+                            "properties": [
+                                {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "hello"
+                                    },
+                                    "value": {
+                                        "type": "Identifier",
+                                        "name": "hello"
+                                    },
+                                    "shorthand": true
                                 }
                             ],
                             "typeAnnotation": null
