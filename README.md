@@ -42,6 +42,8 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `TSTypeOperator` has `operator` instead of `op`;
 - `TSTypeParameter` has a field `name` which is `string` instead of `Identifier`;
 - `FunctionDeclaration` instead of `FunctionExpression` with `identifier` field;
+- `ImportDeclaration` has `importKind` instead of `typeOnly` field;
+- `ObjectProperty` instead of `KeyValuePatternProperty`;
 - etc...
 
 `swc-to-babel` aims to smooth this differences.

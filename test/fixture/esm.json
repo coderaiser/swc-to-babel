@@ -1,0 +1,58 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ImportDeclaration",
+                "specifiers": [
+                    {
+                        "type": "ImportDefaultSpecifier",
+                        "local": {
+                            "type": "Identifier",
+                            "name": "__imports"
+                        }
+                    }
+                ],
+                "source": {
+                    "type": "StringLiteral",
+                    "value": "__a",
+                    "raw": "\"__a\"",
+                    "extra": {
+                        "raw": "\"__a\""
+                    }
+                },
+                "assertions": [],
+                "importKind": "value"
+            },
+            {
+                "type": "ImportDeclaration",
+                "specifiers": [
+                    {
+                        "type": "ImportSpecifier",
+                        "local": {
+                            "type": "Identifier"
+                        },
+                        "imported": {
+                            "type": "Identifier"
+                        }
+                    }
+                ],
+                "source": {
+                    "type": "StringLiteral",
+                    "value": "b",
+                    "raw": "'b'",
+                    "extra": {
+                        "raw": "'b'"
+                    }
+                },
+                "assertions": [],
+                "importKind": "value"
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "sourceType": "module"
+    },
+    "comments": []
+}

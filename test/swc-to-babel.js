@@ -56,6 +56,8 @@ const fixture = {
         typeAliasDeclaration: readJSON('type-alias-declaration.json'),
         function: readJSON('function.json'),
         array: readJSON('array.json'),
+        esm: readJSON('esm.json'),
+        destructuring: readJSON('destructuring.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -73,6 +75,8 @@ const fixture = {
         typeAliasDeclaration: readJS('type-alias-declaration.ts'),
         function: readJS('function.js'),
         array: readJS('array.js'),
+        esm: readJS('esm.js'),
+        destructuring: readJS('destructuring.js'),
     },
 };
 
@@ -255,6 +259,32 @@ test('swc-to-babel: swc: array', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('array', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('swc-to-babel: swc: esm', (t) => {
+    const name = 'esm';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('esm', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('swc-to-babel: swc: destructuring', (t) => {
+    const name = 'destructuring';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('destructuring', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();

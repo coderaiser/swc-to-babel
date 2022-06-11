@@ -1,0 +1,55 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "ObjectPattern",
+                            "properties": [
+                                {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "world"
+                                    },
+                                    "value": {
+                                        "type": "Identifier",
+                                        "name": "world"
+                                    }
+                                }
+                            ],
+                            "typeAnnotation": null
+                        },
+                        "init": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "Identifier",
+                                "name": "require"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "StringLiteral",
+                                    "value": "./hi",
+                                    "raw": "\"./hi\"",
+                                    "extra": {
+                                        "raw": "\"./hi\""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "sourceType": "module"
+    },
+    "comments": []
+}
