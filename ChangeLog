@@ -1,3 +1,9 @@
+2022.06.11, v1.16.0
+
+feature:
+- swc-to-babel: NewExpression: arguments field should always present
+
+
 2022.06.11, v1.15.0
 
 feature:
