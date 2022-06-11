@@ -32,7 +32,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `ExportDefaultDeclaration` instead of `ExportDefaultExpression`;
 - `VariableDeclaration` has no `declare` field;
 - Has no `ParenthesisExpression`;
-- `ClassDeclaration` uses `id` instead of `identifier`, has `ClassBody`;
+- `ClassDeclaration` and `ClassExpression` uses `id` instead of `identifier`, has `ClassBody`;
 - `ClassMethod` uses `static` instead of `isStatic`;
 - [`MemberExpression`](https://github.com/coderaiser/putout/blob/master/docs/the-book-of-ast.md#memberexpression) has `computed` property instead of `Computed` node in `property` field;
 - `NewExpression` has no untyped node with a `spread` property in `arguments`, always has `arguments` field, instead of `null` when absent;
@@ -44,6 +44,8 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `FunctionDeclaration` instead of `FunctionExpression` with `identifier` field;
 - `ImportDeclaration` has `importKind` instead of `typeOnly` field;
 - `ObjectProperty` instead of `KeyValuePatternProperty`;
+- `ExportNamedDeclaration` has `exportKind`, `specifiers` and `assertions` fields;
+- `ExportSpecifier` has `local` which is never `null` instead of `orig`.
 - etc...
 
 `swc-to-babel` aims to smooth this differences.

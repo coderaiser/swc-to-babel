@@ -34,6 +34,45 @@
                     "type": "Identifier",
                     "name": "Button"
                 }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                            "type": "MemberExpression",
+                            "object": {
+                                "type": "Identifier",
+                                "name": "module"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "exports"
+                            },
+                            "computed": false
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "__a"
+                        },
+                        "computed": false
+                    },
+                    "right": {
+                        "type": "ClassExpression",
+                        "body": {
+                            "type": "ClassBody",
+                            "body": []
+                        },
+                        "superClass": null,
+                        "id": {
+                            "type": "Identifier",
+                            "name": "__a"
+                        }
+                    }
+                }
             }
         ],
         "interpreter": null,

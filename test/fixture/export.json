@@ -25,7 +25,11 @@
                             }
                         }
                     ]
-                }
+                },
+                "assertions": [],
+                "source": null,
+                "specifiers": [],
+                "exportKind": "value"
             },
             {
                 "type": "ExportDefaultDeclaration",

@@ -50,6 +50,44 @@
                 },
                 "assertions": [],
                 "importKind": "value"
+            },
+            {
+                "type": "ExportNamedDeclaration",
+                "declaration": {
+                    "type": "ClassDeclaration",
+                    "body": {
+                        "type": "ClassBody",
+                        "body": []
+                    },
+                    "superClass": null,
+                    "id": {
+                        "type": "Identifier",
+                        "name": "Hi"
+                    }
+                },
+                "assertions": [],
+                "source": null,
+                "specifiers": [],
+                "exportKind": "value"
+            },
+            {
+                "type": "ExportNamedDeclaration",
+                "specifiers": [
+                    {
+                        "type": "ExportSpecifier",
+                        "exported": {
+                            "type": "Identifier",
+                            "name": "x"
+                        },
+                        "local": {
+                            "type": "Identifier",
+                            "name": "x"
+                        }
+                    }
+                ],
+                "source": null,
+                "assertions": [],
+                "exportKind": "value"
             }
         ],
         "interpreter": null,
