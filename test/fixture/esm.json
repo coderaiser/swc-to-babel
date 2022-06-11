@@ -31,10 +31,12 @@
                     {
                         "type": "ImportSpecifier",
                         "local": {
-                            "type": "Identifier"
+                            "type": "Identifier",
+                            "name": "a"
                         },
                         "imported": {
-                            "type": "Identifier"
+                            "type": "Identifier",
+                            "name": "a"
                         }
                     }
                 ],
