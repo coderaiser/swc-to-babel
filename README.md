@@ -35,7 +35,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `ClassDeclaration` uses `id` instead of `identifier`, has `ClassBody`;
 - `ClassMethod` uses `static` instead of `isStatic`;
 - [`MemberExpression`](https://github.com/coderaiser/putout/blob/master/docs/the-book-of-ast.md#memberexpression) has `computed` property instead of `Computed` node in `property` field;
-- `NewExpression` has no untyped node with a `spread` property in `arguments`;
+- `NewExpression` has no untyped node with a `spread` property in `arguments`, always has `arguments` field, instead of `null` when absent;
 - `ArrayExpression` has no untyped node with a `spread` property in `elements`;
 - `Function` has no `typeParameters`;
 - `TSTypeReference` has no `typeParams` field;

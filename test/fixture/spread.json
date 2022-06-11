@@ -28,6 +28,25 @@
                 }
             },
             {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "ArrayExpression",
+                    "elements": [
+                        {
+                            "type": "SpreadElement",
+                            "argument": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "Set"
+                                },
+                                "arguments": []
+                            }
+                        }
+                    ]
+                }
+            },
+            {
                 "type": "VariableDeclaration",
                 "kind": "const",
                 "declarations": [
