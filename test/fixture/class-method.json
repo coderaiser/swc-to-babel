@@ -9,21 +9,21 @@
                     "type": "ClassBody",
                     "body": [
                         {
-                            "type": "ClassMethod",
+                            "type": "FunctionDeclaration",
                             "key": {
                                 "type": "Identifier",
-                                "start": 251,
-                                "end": 257,
-                                "name": "render"
+                                "span": {
+                                    "start": 251,
+                                    "end": 257,
+                                    "ctxt": 0
+                                },
+                                "value": "render",
+                                "optional": false
                             },
                             "kind": "method",
-                            "start": 251,
-                            "end": 261,
                             "params": [],
                             "body": {
                                 "type": "BlockStatement",
-                                "start": 259,
-                                "end": 261,
                                 "body": []
                             },
                             "generator": false,
@@ -33,24 +33,16 @@
                 },
                 "superClass": {
                     "type": "Identifier",
-                    "start": 240,
-                    "end": 249,
                     "name": "Component"
                 },
-                "start": 219,
-                "end": 262,
                 "id": {
                     "type": "Identifier",
-                    "start": 225,
-                    "end": 231,
                     "name": "Button"
                 }
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 219,
-        "end": 262,
         "sourceType": "module"
     },
     "comments": []

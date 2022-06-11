@@ -6,28 +6,19 @@
             {
                 "type": "ExpressionStatement",
                 "expression": {
-                    "type": "ArrowFunctionExpression",
+                    "type": "FunctionDeclaration",
                     "params": [],
                     "body": {
                         "type": "BlockStatement",
-                        "start": 103,
-                        "end": 105,
                         "body": []
                     },
                     "async": false,
-                    "generator": false,
-                    "returnType": null,
-                    "start": 97,
-                    "end": 105
-                },
-                "start": 97,
-                "end": 106
+                    "generator": false
+                }
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 97,
-        "end": 106,
         "sourceType": "module"
     },
     "comments": []

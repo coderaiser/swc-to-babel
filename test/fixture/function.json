@@ -1,0 +1,60 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "FunctionDeclaration",
+                "params": [
+                    {
+                        "type": "Identifier",
+                        "name": "__args"
+                    }
+                ],
+                "body": {
+                    "type": "BlockStatement",
+                    "body": []
+                },
+                "generator": false,
+                "async": false,
+                "id": {
+                    "type": "Identifier",
+                    "name": "__"
+                }
+            },
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "a"
+                        },
+                        "init": {
+                            "type": "FunctionDeclaration",
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "__args"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": []
+                            },
+                            "generator": false,
+                            "async": false,
+                            "id": null
+                        }
+                    }
+                ]
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "sourceType": "module"
+    },
+    "comments": []
+}

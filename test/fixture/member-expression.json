@@ -9,28 +9,18 @@
                     "type": "MemberExpression",
                     "object": {
                         "type": "Identifier",
-                        "start": 264,
-                        "end": 269,
                         "name": "items"
                     },
                     "property": {
                         "type": "Identifier",
-                        "start": 270,
-                        "end": 271,
                         "name": "i"
                     },
-                    "start": 264,
-                    "end": 272,
                     "computed": true
-                },
-                "start": 264,
-                "end": 273
+                }
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 264,
-        "end": 273,
         "sourceType": "module"
     },
     "comments": []

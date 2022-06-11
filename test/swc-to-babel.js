@@ -54,6 +54,7 @@ const fixture = {
         spread: readJSON('spread.json'),
         call: readJSON('call.json'),
         typeAliasDeclaration: readJSON('type-alias-declaration.json'),
+        function: readJSON('function.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -69,6 +70,7 @@ const fixture = {
         spread: readJS('spread.js'),
         call: readJS('call.js'),
         typeAliasDeclaration: readJS('type-alias-declaration.ts'),
+        function: readJS('function.js'),
     },
 };
 
@@ -225,6 +227,19 @@ test('swc-to-babel: swc: type-alias-declaration', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('type-alias-declaration', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('swc-to-babel: swc: function', (t) => {
+    const name = 'function';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('function', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();

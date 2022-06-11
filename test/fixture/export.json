@@ -13,40 +13,26 @@
                             "type": "VariableDeclarator",
                             "id": {
                                 "type": "Identifier",
-                                "start": 185,
-                                "end": 188,
                                 "name": "__a"
                             },
                             "init": {
                                 "type": "NumericLiteral",
                                 "value": 5,
                                 "raw": "5",
-                                "start": 191,
-                                "end": 192,
                                 "extra": {
                                     "raw": "5"
                                 }
-                            },
-                            "start": 185,
-                            "end": 192
+                            }
                         }
-                    ],
-                    "start": 179,
-                    "end": 193
-                },
-                "start": 172,
-                "end": 193
+                    ]
+                }
             },
             {
                 "type": "ExportDefaultDeclaration",
-                "start": 194,
-                "end": 211,
                 "declaration": {
                     "type": "NumericLiteral",
                     "value": 1,
                     "raw": "1",
-                    "start": 209,
-                    "end": 210,
                     "extra": {
                         "raw": "1"
                     }
@@ -55,8 +41,6 @@
         ],
         "interpreter": null,
         "directives": [],
-        "start": 172,
-        "end": 211,
         "sourceType": "module"
     },
     "comments": []

@@ -11,8 +11,6 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
-                            "start": 7,
-                            "end": 12,
                             "loc": {
                                 "start": {
                                     "line": 1,
@@ -29,8 +27,6 @@
                             "type": "StringLiteral",
                             "value": "world",
                             "raw": "'world'",
-                            "start": 15,
-                            "end": 22,
                             "loc": {
                                 "start": {
                                     "line": 1,
@@ -45,8 +41,6 @@
                                 "raw": "'world'"
                             }
                         },
-                        "start": 7,
-                        "end": 22,
                         "loc": {
                             "start": {
                                 "line": 1,
@@ -59,8 +53,6 @@
                         }
                     }
                 ],
-                "start": 1,
-                "end": 23,
                 "loc": {
                     "start": {
                         "line": 1,
@@ -75,8 +67,6 @@
         ],
         "interpreter": null,
         "directives": [],
-        "start": 1,
-        "end": 23,
         "loc": {
             "start": {
                 "line": 1,

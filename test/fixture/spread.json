@@ -14,28 +14,18 @@
                                 "type": "NewExpression",
                                 "callee": {
                                     "type": "Identifier",
-                                    "start": 283,
-                                    "end": 286,
                                     "name": "Set"
                                 },
                                 "arguments": [
                                     {
                                         "type": "Identifier",
-                                        "start": 287,
-                                        "end": 290,
                                         "name": "__a"
                                     }
-                                ],
-                                "start": 279,
-                                "end": 291
+                                ]
                             }
                         }
-                    ],
-                    "start": 275,
-                    "end": 292
-                },
-                "start": 275,
-                "end": 293
+                    ]
+                }
             },
             {
                 "type": "VariableDeclaration",
@@ -45,8 +35,6 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
-                            "start": 301,
-                            "end": 307,
                             "name": "places"
                         },
                         "init": {
@@ -56,8 +44,6 @@
                                     "type": "SpreadElement",
                                     "argument": {
                                         "type": "Identifier",
-                                        "start": 319,
-                                        "end": 320,
                                         "name": "a"
                                     }
                                 },
@@ -65,27 +51,17 @@
                                     "type": "SpreadElement",
                                     "argument": {
                                         "type": "Identifier",
-                                        "start": 329,
-                                        "end": 330,
                                         "name": "b"
                                     }
                                 }
-                            ],
-                            "start": 310,
-                            "end": 332
-                        },
-                        "start": 301,
-                        "end": 332
+                            ]
+                        }
                     }
-                ],
-                "start": 295,
-                "end": 333
+                ]
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 275,
-        "end": 333,
         "sourceType": "module"
     },
     "comments": []
