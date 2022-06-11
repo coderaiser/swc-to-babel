@@ -9,16 +9,10 @@
                     "type": "ClassBody",
                     "body": [
                         {
-                            "type": "FunctionDeclaration",
+                            "type": "ClassMethod",
                             "key": {
                                 "type": "Identifier",
-                                "span": {
-                                    "start": 251,
-                                    "end": 257,
-                                    "ctxt": 0
-                                },
-                                "value": "render",
-                                "optional": false
+                                "name": "render"
                             },
                             "kind": "method",
                             "params": [],
@@ -27,7 +21,8 @@
                                 "body": []
                             },
                             "generator": false,
-                            "async": false
+                            "async": false,
+                            "id": null
                         }
                     ]
                 },

@@ -21,7 +21,7 @@
                             }
                         },
                         {
-                            "type": "FunctionDeclaration",
+                            "type": "ArrowFunctionExpression",
                             "params": [
                                 {
                                     "type": "Identifier",
@@ -63,7 +63,7 @@
                                                     "extra": {}
                                                 },
                                                 {
-                                                    "type": "FunctionDeclaration",
+                                                    "type": "ArrowFunctionExpression",
                                                     "params": [],
                                                     "body": {
                                                         "type": "BlockStatement",
@@ -122,7 +122,8 @@
                                                         ]
                                                     },
                                                     "async": false,
-                                                    "generator": false
+                                                    "generator": false,
+                                                    "id": null
                                                 }
                                             ]
                                         }
@@ -130,7 +131,8 @@
                                 ]
                             },
                             "async": false,
-                            "generator": false
+                            "generator": false,
+                            "id": null
                         }
                     ]
                 }

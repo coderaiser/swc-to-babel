@@ -6,14 +6,15 @@
             {
                 "type": "ExpressionStatement",
                 "expression": {
-                    "type": "FunctionDeclaration",
+                    "type": "ArrowFunctionExpression",
                     "params": [],
                     "body": {
                         "type": "BlockStatement",
                         "body": []
                     },
                     "async": false,
-                    "generator": false
+                    "generator": false,
+                    "id": null
                 }
             }
         ],

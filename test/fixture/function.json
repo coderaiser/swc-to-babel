@@ -33,7 +33,7 @@
                             "name": "a"
                         },
                         "init": {
-                            "type": "FunctionDeclaration",
+                            "type": "FunctionExpression",
                             "params": [
                                 {
                                     "type": "Identifier",
@@ -50,6 +50,102 @@
                         }
                     }
                 ]
+            },
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "b"
+                        },
+                        "init": {
+                            "type": "FunctionExpression",
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "__args"
+                                }
+                            ],
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": []
+                            },
+                            "generator": false,
+                            "async": false,
+                            "id": {
+                                "type": "Identifier",
+                                "name": "x"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "ArrowFunctionExpression",
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "name": "__args__a"
+                        }
+                    ],
+                    "body": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "__b"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Identifier",
+                                "name": "__args__a"
+                            }
+                        ]
+                    },
+                    "async": false,
+                    "generator": false,
+                    "id": null
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "ArrowFunctionExpression",
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "name": "__args__a"
+                        }
+                    ],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "__b"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "__args__a"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "async": false,
+                    "generator": false,
+                    "id": null
+                }
             }
         ],
         "interpreter": null,

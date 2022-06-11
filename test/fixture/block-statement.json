@@ -14,7 +14,7 @@
                             "name": "a"
                         },
                         "init": {
-                            "type": "FunctionDeclaration",
+                            "type": "ArrowFunctionExpression",
                             "params": [],
                             "body": {
                                 "type": "BlockStatement",
@@ -33,7 +33,8 @@
                                 ]
                             },
                             "async": false,
-                            "generator": false
+                            "generator": false,
+                            "id": null
                         }
                     }
                 ]

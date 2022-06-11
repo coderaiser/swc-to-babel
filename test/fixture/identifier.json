@@ -6,7 +6,7 @@
             {
                 "type": "ExpressionStatement",
                 "expression": {
-                    "type": "FunctionDeclaration",
+                    "type": "ArrowFunctionExpression",
                     "params": [
                         {
                             "type": "Identifier",
@@ -45,7 +45,8 @@
                         ]
                     },
                     "async": false,
-                    "generator": false
+                    "generator": false,
+                    "id": null
                 }
             }
         ],
