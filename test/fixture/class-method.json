@@ -18,7 +18,8 @@
                             "params": [],
                             "body": {
                                 "type": "BlockStatement",
-                                "body": []
+                                "body": [],
+                                "directives": []
                             },
                             "generator": false,
                             "async": false,

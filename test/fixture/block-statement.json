@@ -30,7 +30,8 @@
                                             }
                                         }
                                     }
-                                ]
+                                ],
+                                "directives": []
                             },
                             "async": false,
                             "generator": false,

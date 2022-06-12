@@ -65,7 +65,8 @@
                                     }
                                 ]
                             }
-                        ]
+                        ],
+                        "directives": []
                     },
                     "generator": false,
                     "async": false,
