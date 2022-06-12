@@ -53,7 +53,8 @@ jobs:
           message: 'chore: ${{ env.NAME }}: lint using actions ☘️'
       
       - name: Coverage
-        run: redrun coverage
+        run: redrun coverage report
+        
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
