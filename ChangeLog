@@ -1,3 +1,9 @@
+2022.06.12, v1.20.0
+
+feature:
+- swc-to-babel: add support of ExportDefaultDeclaration
+
+
 2022.06.11, v1.19.0
 
 feature:
