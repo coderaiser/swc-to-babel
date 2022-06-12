@@ -5,6 +5,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NAME: swc-to-babel
     strategy:
       matrix:
         node-version:
@@ -19,13 +21,39 @@ jobs:
       - name: Install Redrun
         run: npm i redrun -g
       - name: Install
-        run: npm i -f
+        run: npm install -f
       - name: Bootstrap
         run: redrun bootstrap
       - name: Lint
-        run: redrun lint
+        run: redrun fix:lint
+      
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+        
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+        
+      - name: Typos Install
+        run: cargo install typos-cli || echo 'already installed'
+      
+      - name: Typos
+        run: typos --write-changes
+      
+      - name: Commit fixes
+        uses: EndBug/add-and-commit@v7
+        with:
+          message: 'chore: ${{ env.NAME }}: lint using actions ☘️'
+      
       - name: Coverage
-        run: redrun coverage report
+        run: redrun coverage
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
