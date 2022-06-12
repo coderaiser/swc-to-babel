@@ -45,7 +45,8 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `ImportDeclaration` has `importKind` instead of `typeOnly` field;
 - `ObjectProperty` instead of `KeyValuePatternProperty` and `AssignmentPatternProperty`;
 - `ExportNamedDeclaration` has `exportKind`, `specifiers` and `assertions` fields;
-- `ExportSpecifier` has `local` which is never `null` instead of `orig`.
+- `ExportSpecifier` has `local` which is never `null` instead of `orig`;
+- `ExportDefaultDeclaration` has `declaration` instead of `decl`;
 - etc...
 
 `swc-to-babel` aims to smooth this differences.

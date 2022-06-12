@@ -33,14 +33,49 @@
             },
             {
                 "type": "ExportDefaultDeclaration",
+                "exportKind": "value",
+                "assertions": []
+            },
+            {
+                "type": "ExportDefaultDeclaration",
                 "declaration": {
-                    "type": "NumericLiteral",
-                    "value": 1,
-                    "raw": "1",
-                    "extra": {
-                        "raw": "1"
+                    "type": "FunctionDeclaration",
+                    "params": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "VariableDeclaration",
+                                "kind": "const",
+                                "declarations": [
+                                    {
+                                        "type": "VariableDeclarator",
+                                        "id": {
+                                            "type": "Identifier",
+                                            "name": "t"
+                                        },
+                                        "init": {
+                                            "type": "StringLiteral",
+                                            "value": "hello",
+                                            "raw": "'hello'",
+                                            "extra": {
+                                                "raw": "'hello'"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "async": false,
+                    "id": {
+                        "type": "Identifier",
+                        "name": "addCommands"
                     }
-                }
+                },
+                "exportKind": "value",
+                "assertions": []
             }
         ],
         "interpreter": null,

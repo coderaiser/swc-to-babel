@@ -14,11 +14,11 @@
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 7
+                                    "column": 6
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 11
+                                    "column": 10
                                 }
                             },
                             "name": "hello"
@@ -30,11 +30,11 @@
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 15
+                                    "column": 14
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 21
+                                    "column": 20
                                 }
                             },
                             "extra": {
@@ -44,11 +44,11 @@
                         "loc": {
                             "start": {
                                 "line": 1,
-                                "column": 7
+                                "column": 6
                             },
                             "end": {
                                 "line": 1,
-                                "column": 21
+                                "column": 20
                             }
                         }
                     }
@@ -56,11 +56,11 @@
                 "loc": {
                     "start": {
                         "line": 1,
-                        "column": 1
+                        "column": 0
                     },
                     "end": {
-                        "line": 2,
-                        "column": 0
+                        "line": 1,
+                        "column": 21
                     }
                 }
             }
@@ -70,11 +70,11 @@
         "loc": {
             "start": {
                 "line": 1,
-                "column": 1
+                "column": 0
             },
             "end": {
-                "line": 2,
-                "column": 0
+                "line": 1,
+                "column": 21
             }
         },
         "sourceType": "module"

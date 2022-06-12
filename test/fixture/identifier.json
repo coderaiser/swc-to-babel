@@ -13,11 +13,11 @@
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 26
+                                    "column": 25
                                 },
                                 "end": {
-                                    "line": 2,
-                                    "column": 0
+                                    "line": 1,
+                                    "column": 33
                                 }
                             },
                             "name": "__args__a"
