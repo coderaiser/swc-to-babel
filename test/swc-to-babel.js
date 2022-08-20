@@ -59,6 +59,7 @@ const fixture = {
         esm: readJSON('esm.json'),
         destructuring: readJSON('destructuring.json'),
         as: readJSON('as.json'),
+        objectExpression: readJSON('object-expression.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -79,6 +80,7 @@ const fixture = {
         esm: readJS('esm.js'),
         destructuring: readJS('destructuring.js'),
         as: readJS('as.ts'),
+        objectExpression: readJS('object-expression.js'),
     },
 };
 
@@ -300,6 +302,20 @@ test('swc-to-babel: swc: as', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('as', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('swc-to-babel: swc: object-expression', (t) => {
+    const name = 'objectExpression';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('object-expression', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();
