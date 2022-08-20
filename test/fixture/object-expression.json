@@ -1,0 +1,62 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Object"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "defineProperty"
+                        },
+                        "computed": false
+                    },
+                    "arguments": [
+                        {
+                            "type": "Identifier",
+                            "name": "exports"
+                        },
+                        {
+                            "type": "StringLiteral",
+                            "value": "__esModule",
+                            "raw": "\"__esModule\"",
+                            "extra": {
+                                "raw": "\"__esModule\""
+                            }
+                        },
+                        {
+                            "type": "ObjectExpression",
+                            "properties": [
+                                {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "value"
+                                    },
+                                    "value": {
+                                        "type": "BooleanLiteral",
+                                        "value": true,
+                                        "extra": {}
+                                    },
+                                    "shorthand": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "sourceType": "module"
+    },
+    "comments": []
+}
