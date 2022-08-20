@@ -48,7 +48,7 @@
     "estree-util-attach-comments": "^2.0.0",
     "madrun": "^9.0.4",
     "nodemon": "^2.0.2",
-    "putout": "^26.13.0",
+    "putout": "^27.1.0",
     "supertape": "^7.3.0",
     "typescript": "^4.5.2"
   },
