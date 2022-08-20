@@ -1,0 +1,33 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "TSAsExpression",
+                    "expression": {
+                        "type": "NumericLiteral",
+                        "value": 5,
+                        "raw": "5",
+                        "extra": {
+                            "raw": "5"
+                        }
+                    },
+                    "typeAnnotation": {
+                        "type": "TSAnyKeyword",
+                        "kind": "any"
+                    },
+                    "trailingComments": [],
+                    "leadingComments": [],
+                    "innerComments": []
+                }
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "sourceType": "module"
+    },
+    "comments": []
+}
