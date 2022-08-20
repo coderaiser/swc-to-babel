@@ -1,3 +1,10 @@
+2022.08.21, v1.21.0
+
+feature:
+- package: eslint-plugin-putout v16.0.1
+- package: putout v27.1.0
+- add support of TSKeywordType (close #1)
+
 2022.06.12, v1.20.1
 
 fix:
