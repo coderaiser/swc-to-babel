@@ -43,7 +43,7 @@
     "coveralls": "^3.0.0",
     "eslint": "^8.0.0-beta.1",
     "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-putout": "^15.6.0",
+    "eslint-plugin-putout": "^16.0.1",
     "espree": "^9.0.0",
     "estree-util-attach-comments": "^2.0.0",
     "madrun": "^9.0.4",
