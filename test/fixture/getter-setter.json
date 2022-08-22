@@ -1,0 +1,78 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "obj"
+                        },
+                        "init": {
+                            "type": "ObjectExpression",
+                            "properties": [
+                                {
+                                    "type": "ObjectMethod",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "getter"
+                                    },
+                                    "typeAnnotation": null,
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ReturnStatement",
+                                                "argument": {
+                                                    "type": "StringLiteral",
+                                                    "value": "getter",
+                                                    "raw": "'getter'",
+                                                    "extra": {
+                                                        "raw": "'getter'"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "directives": []
+                                    },
+                                    "kind": "set",
+                                    "params": [],
+                                    "id": null
+                                },
+                                {
+                                    "type": "ObjectMethod",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "setter"
+                                    },
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [],
+                                        "directives": []
+                                    },
+                                    "kind": "set",
+                                    "params": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "value"
+                                        }
+                                    ],
+                                    "id": null
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "sourceType": "module"
+    },
+    "comments": []
+}
