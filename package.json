@@ -6,7 +6,8 @@
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "convert swc ast to babel",
   "homepage": "http://github.com/coderaiser/swc-to-babel",
-  "main": "lib/swc-to-babel.js",
+  "main": "./lib/swc-to-babel.js",
+  "types": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/coderaiser/swc-to-babel.git"
@@ -34,7 +35,7 @@
     "espree"
   ],
   "devDependencies": {
-    "@babel/parser": "^7.3.1",
+    "@babel/parser": "^7.18.13",
     "@swc/core": "^1.2.136",
     "acorn": "^8.0.1",
     "acorn-stage3": "^4.0.0",
