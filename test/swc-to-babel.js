@@ -1,10 +1,7 @@
 'use strict';
 
 const {join} = require('path');
-const {
-    readFileSync,
-    writeFileSync,
-} = require('fs');
+const {readFileSync, writeFileSync} = require('fs');
 
 const {extend} = require('supertape');
 const swc = require('@swc/core');
@@ -14,7 +11,8 @@ const swcToBabel = require('..');
 const json = (a) => JSON.parse(JSON.stringify(a));
 
 const test = extend({
-    jsonEqual: (operator) => (actual, expected, message = 'should jsonEqual') => {
+    jsonEqual:
+    (operator) => (actual, expected, message = 'should jsonEqual') => {
         const {is, output} = operator.deepEqual(json(actual), json(expected));
         
         return {
@@ -60,6 +58,7 @@ const fixture = {
         destructuring: readJSON('destructuring.json'),
         as: readJSON('as.json'),
         objectExpression: readJSON('object-expression.json'),
+        getterSetter: readJSON('getter-setter.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -81,6 +80,7 @@ const fixture = {
         destructuring: readJS('destructuring.js'),
         as: readJS('as.ts'),
         objectExpression: readJS('object-expression.js'),
+        getterSetter: readJS('getter-setter.js'),
     },
 };
 
@@ -316,6 +316,20 @@ test('swc-to-babel: swc: object-expression', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('object-expression', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('swc-to-babel: swc: getter-setter', (t) => {
+    const name = 'getterSetter';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('getter-setter', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();
