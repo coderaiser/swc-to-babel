@@ -81,6 +81,7 @@ traverse({
 ```
 
 ## API reference
+
 ```ts
 /**
  * Convert an SWC ast to a babel ast
