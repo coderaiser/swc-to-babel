@@ -6,12 +6,14 @@
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "convert swc ast to babel",
   "homepage": "http://github.com/coderaiser/swc-to-babel",
-  "main": "lib/swc-to-babel.js",
+  "main": "./lib/swc-to-babel.js",
+  "types": "./lib/swc-to-babel.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/coderaiser/swc-to-babel.git"
   },
   "scripts": {
+    "wisdom": "madrun wisdom",
     "test": "madrun test",
     "watch:test": "madrun watch:test",
     "lint": "madrun lint",
@@ -20,11 +22,14 @@
     "fix:lint": "madrun fix:lint",
     "coverage": "madrun coverage",
     "report": "madrun report",
-    "fixture": "madrun fixture"
+    "fixture": "madrun fixture",
+    "test:dts": "madrun test:dts"
   },
   "dependencies": {
     "@babel/traverse": "^7.1.6",
-    "@babel/types": "^7.2.0"
+    "@babel/types": "^7.2.0",
+    "@swc/core": "^1.2.242",
+    "@babel/parser": "^7.18.13"
   },
   "keywords": [
     "ast",
@@ -34,11 +39,9 @@
     "espree"
   ],
   "devDependencies": {
-    "@babel/parser": "^7.3.1",
-    "@swc/core": "^1.2.136",
     "c8": "^7.6.0",
-    "coveralls": "^3.0.0",
-    "eslint": "^8.0.0-beta.1",
+    "check-dts": "^0.6.7",
+    "eslint": "^8.0.0",
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-putout": "^16.0.1",
     "madrun": "^9.0.4",

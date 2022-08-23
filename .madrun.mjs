@@ -1,7 +1,7 @@
 import {run} from 'madrun';
 
 export default {
-    //'wisdom': () => run(['lint', 'coverage']),
+    'wisdom': () => run(['lint', 'coverage', 'test:dts']),
     'test': () => `tape 'test/*.js' 'lib/**/*.spec.js'`,
     'watch:test': async () => `nodemon -w lib -w test -x ${await run('test')}`,
     'lint': () => `putout .`,
@@ -11,5 +11,5 @@ export default {
     'coverage': async () => `c8 ${await run('test')}`,
     'report': () => 'c8 report --reporter=lcov',
     'fixture': async () => `UPDATE=1 ${await run('test')}`,
+    'test:dts': () => 'check-dts test/*.ts',
 };
-
