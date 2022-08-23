@@ -11,8 +11,7 @@ const swcToBabel = require('..');
 const json = (a) => JSON.parse(JSON.stringify(a));
 
 const test = extend({
-    jsonEqual:
-    (operator) => (actual, expected, message = 'should jsonEqual') => {
+    jsonEqual: (operator) => (actual, expected, message = 'should jsonEqual') => {
         const {is, output} = operator.deepEqual(json(actual), json(expected));
         
         return {
@@ -59,6 +58,7 @@ const fixture = {
         as: readJSON('as.json'),
         objectExpression: readJSON('object-expression.json'),
         getterSetter: readJSON('getter-setter.json'),
+        noSrc: readJSON('no-src.json'),
     },
     js: {
         swcModule: readJS('swc-module.js'),
@@ -81,6 +81,7 @@ const fixture = {
         as: readJS('as.ts'),
         objectExpression: readJS('object-expression.js'),
         getterSetter: readJS('getter-setter.js'),
+        noSrc: readJS('no-src.js'),
     },
 };
 
@@ -330,6 +331,20 @@ test('swc-to-babel: swc: getter-setter', (t) => {
     const result = swcToBabel(ast, fixture.js[name]);
     
     update('getter-setter', result);
+    
+    t.jsonEqual(result, fixture.ast[name]);
+    t.end();
+});
+
+test('swc-to-babel: swc: no-src', (t) => {
+    const name = 'noSrc';
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    
+    const result = swcToBabel(ast, fixture.js[name]);
+    
+    update('no-src', result);
     
     t.jsonEqual(result, fixture.ast[name]);
     t.end();
