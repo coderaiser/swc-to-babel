@@ -1,6 +1,6 @@
 {
   "name": "swc-to-babel",
-  "version": "1.22.0",
+  "version": "1.23.0",
   "type": "commonjs",
   "commitType": "colon",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
