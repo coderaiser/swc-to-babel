@@ -1,0 +1,40 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                            "type": "Identifier",
+                            "name": "console"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "log"
+                        },
+                        "computed": false
+                    },
+                    "arguments": [
+                        {
+                            "type": "StringLiteral",
+                            "value": "hello world",
+                            "raw": "'hello world'",
+                            "extra": {
+                                "raw": "'hello world'"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "sourceType": "module"
+    },
+    "comments": []
+}
