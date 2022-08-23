@@ -6,6 +6,7 @@
         "**/*.spec.js",
         "**/fixture",
         "test",
+        "**/lib/*.d.ts",
         ".*.{js,mjs}"
     ],
     "branches": 100,
