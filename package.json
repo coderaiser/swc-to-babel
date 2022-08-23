@@ -7,7 +7,7 @@
   "description": "convert swc ast to babel",
   "homepage": "http://github.com/coderaiser/swc-to-babel",
   "main": "./lib/swc-to-babel.js",
-  "types": "./index.d.ts",
+  "types": "./lib/swc-to-babel.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/coderaiser/swc-to-babel.git"
