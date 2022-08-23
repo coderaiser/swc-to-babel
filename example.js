@@ -1,12 +1,12 @@
 'use strict';
 
-const cherow = require('espree');
+const {parseSync} = require('@swc/core');
 const toBabel = require('.');
 const traverse = require('@babel/traverse').default;
-
-const ast = toBabel(cherow.parse(`
+const code = `
     const f = ({a}) => a;
-`));
+`;
+const ast = toBabel(parseSync(code), code);
 
 traverse(ast, {
     noScope: false,
@@ -16,4 +16,3 @@ traverse(ast, {
         'a';
     },
 });
-
