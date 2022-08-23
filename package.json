@@ -21,11 +21,14 @@
     "fix:lint": "madrun fix:lint",
     "coverage": "madrun coverage",
     "report": "madrun report",
-    "fixture": "madrun fixture"
+    "fixture": "madrun fixture",
+    "check:types": "madrun check:types"
   },
   "dependencies": {
     "@babel/traverse": "^7.1.6",
-    "@babel/types": "^7.2.0"
+    "@babel/types": "^7.2.0",
+    "@swc/core": "^1.2.242",
+    "@babel/parser": "^7.18.13"
   },
   "keywords": [
     "ast",
@@ -35,11 +38,10 @@
     "espree"
   ],
   "devDependencies": {
-    "@babel/parser": "^7.18.13",
-    "@swc/core": "^1.2.136",
     "acorn": "^8.0.1",
     "acorn-stage3": "^4.0.0",
     "c8": "^7.6.0",
+    "check-dts": "^0.6.7",
     "coveralls": "^3.0.0",
     "eslint": "^8.0.0-beta.1",
     "eslint-plugin-n": "^15.2.4",
