@@ -26,10 +26,10 @@
     "test:dts": "madrun test:dts"
   },
   "dependencies": {
+    "@babel/parser": "^7.18.13",
     "@babel/traverse": "^7.1.6",
     "@babel/types": "^7.2.0",
-    "@swc/core": "^1.2.242",
-    "@babel/parser": "^7.18.13"
+    "@swc/core": "^1.2.242"
   },
   "keywords": [
     "ast",

@@ -40,7 +40,7 @@
                                         ],
                                         "directives": []
                                     },
-                                    "kind": "set",
+                                    "kind": "get",
                                     "params": [],
                                     "id": null
                                 },
