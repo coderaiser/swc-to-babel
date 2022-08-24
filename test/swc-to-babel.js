@@ -5,17 +5,17 @@ const {readFileSync, writeFileSync} = require('fs');
 
 const {extend} = require('supertape');
 const swc = require('@swc/core');
-const generate = require('@babel/generator').default;
+const {print} = require('putout');
 const swcToBabel = require('..');
-const {ESLint} = require('eslint');
-const eslint = new ESLint({
-    baseConfig: require('../.eslintrc.json'),
-});
+const tryCatch = require('try-catch');
 
 const json = (a) => JSON.parse(JSON.stringify(a));
 
 const test = extend({
-    jsonEqual: (operator) => (actual, expected, message = 'should jsonEqual') => {
+    jsonEqual: (operator) => (error, actual, expected, message = 'should jsonEqual') => {
+        if (error)
+            return operator.fail(error.message);
+        
         const {is, output} = operator.deepEqual(json(actual), json(expected));
         
         return {
@@ -26,25 +26,19 @@ const test = extend({
             output,
         };
     },
+    compile: (operator) => (name) => {
+        const ast = swc.parseSync(fixture.js[name], {
+            syntax: 'typescript',
+        });
+        
+        const babelAST = swcToBabel(ast, fixture.js[name]);
+        const [error] = tryCatch(print, babelAST);
+        
+        update(name, babelAST);
+        
+        return operator.jsonEqual(error, babelAST, fixture.ast[name]);
+    },
 });
-
-async function generateTest(name, key, t) {
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    
-    const result = swcToBabel(ast, fixture.js[name]);
-    const {code} = generate(result);
-    
-    update(key, result);
-    let errors = 0;
-    
-    for (const current of await eslint.lintText(code, {filePath: 'file.ts'})) {
-        errors += current.fatalErrorCount;
-    }
-    
-    t.jsonEqual({ast: result, errors}, {ast: fixture.ast[name], errors: 0});
-}
 
 const fixtureDir = join(__dirname, 'fixture');
 
@@ -60,155 +54,155 @@ const readJS = (a) => readFileSync(join(`${fixtureDir}/${a}`), 'utf8');
 const readJSON = (a) => require(`${fixtureDir}/${a}`);
 const fixture = {
     ast: {
-        swcModule: readJSON('swc-module.json'),
-        identifier: readJSON('identifier.json'),
-        blockStatement: readJSON('block-statement.json'),
-        position: readJSON('position.json'),
-        keyof: readJSON('keyof.json'),
-        templateElement: readJSON('template-element.json'),
-        export: readJSON('export.json'),
-        parens: readJSON('parens.json'),
-        classMethod: readJSON('class-method.json'),
-        memberExpression: readJSON('member-expression.json'),
-        spread: readJSON('spread.json'),
-        call: readJSON('call.json'),
-        typeAliasDeclaration: readJSON('type-alias-declaration.json'),
-        function: readJSON('function.json'),
-        array: readJSON('array.json'),
-        esm: readJSON('esm.json'),
-        destructuring: readJSON('destructuring.json'),
-        as: readJSON('as.json'),
-        objectExpression: readJSON('object-expression.json'),
-        getterSetter: readJSON('getter-setter.json'),
-        noSrc: readJSON('no-src.json'),
+        'swc-module': readJSON('swc-module.json'),
+        'identifier': readJSON('identifier.json'),
+        'block-statement': readJSON('block-statement.json'),
+        'position': readJSON('position.json'),
+        'keyof': readJSON('keyof.json'),
+        'template-element': readJSON('template-element.json'),
+        'export': readJSON('export.json'),
+        'parens': readJSON('parens.json'),
+        'class-method': readJSON('class-method.json'),
+        'member-expression': readJSON('member-expression.json'),
+        'spread': readJSON('spread.json'),
+        'call': readJSON('call.json'),
+        'type-alias-declaration': readJSON('type-alias-declaration.json'),
+        'function': readJSON('function.json'),
+        'array': readJSON('array.json'),
+        'esm': readJSON('esm.json'),
+        'destructuring': readJSON('destructuring.json'),
+        'as': readJSON('as.json'),
+        'object-expression': readJSON('object-expression.json'),
+        'getter-setter': readJSON('getter-setter.json'),
+        'no-src': readJSON('no-src.json'),
     },
     js: {
-        swcModule: readJS('swc-module.js'),
-        identifier: readJS('identifier.js'),
-        blockStatement: readJS('block-statement.js'),
-        position: readJS('position.js'),
-        keyof: readJS('keyof.js'),
-        templateElement: readJS('template-element.js'),
-        export: readJS('export.js'),
-        parens: readJS('parens.js'),
-        classMethod: readJS('class-method.js'),
-        memberExpression: readJS('member-expression.js'),
-        spread: readJS('spread.js'),
-        call: readJS('call.js'),
-        typeAliasDeclaration: readJS('type-alias-declaration.ts'),
-        function: readJS('function.js'),
-        array: readJS('array.js'),
-        esm: readJS('esm.js'),
-        destructuring: readJS('destructuring.js'),
-        as: readJS('as.ts'),
-        objectExpression: readJS('object-expression.js'),
-        getterSetter: readJS('getter-setter.js'),
-        noSrc: readJS('no-src.js'),
+        'swc-module': readJS('swc-module.js'),
+        'identifier': readJS('identifier.js'),
+        'block-statement': readJS('block-statement.js'),
+        'position': readJS('position.js'),
+        'keyof': readJS('keyof.js'),
+        'template-element': readJS('template-element.js'),
+        'export': readJS('export.js'),
+        'parens': readJS('parens.js'),
+        'class-method': readJS('class-method.js'),
+        'member-expression': readJS('member-expression.js'),
+        'spread': readJS('spread.js'),
+        'call': readJS('call.js'),
+        'type-alias-declaration': readJS('type-alias-declaration.ts'),
+        'function': readJS('function.js'),
+        'array': readJS('array.js'),
+        'esm': readJS('esm.js'),
+        'destructuring': readJS('destructuring.js'),
+        'as': readJS('as.ts'),
+        'object-expression': readJS('object-expression.js'),
+        'getter-setter': readJS('getter-setter.js'),
+        'no-src': readJS('no-src.js'),
     },
 };
 
-test('swc-to-babel: swc: parse: swcModule', async (t) => {
-    await generateTest('swcModule', 'swc-module', t);
+test('swc-to-babel: swc: parse: swcModule', (t) => {
+    t.compile('swc-module');
     t.end();
 });
 
-test('swc-to-babel: swc: parse: identifier', async (t) => {
-    await generateTest('identifier', 'identifier', t);
+test('swc-to-babel: swc: parse: identifier', (t) => {
+    t.compile('identifier');
     t.end();
 });
 
-test('swc-to-babel: swc: parse: BlockStatement', async (t) => {
-    await generateTest('blockStatement', 'block-statement', t);
+test('swc-to-babel: swc: parse: BlockStatement', (t) => {
+    t.compile('block-statement');
     t.end();
 });
 
-test('swc-to-babel: swc: parse: position', async (t) => {
-    await generateTest('position', 'position', t);
+test('swc-to-babel: swc: parse: position', (t) => {
+    t.compile('position');
     t.end();
 });
 
-test('swc-to-babel: swc: parse: keyof', async (t) => {
-    await generateTest('keyof', 'keyof', t);
+test('swc-to-babel: swc: parse: keyof', (t) => {
+    t.compile('keyof');
     t.end();
 });
 
-test('swc-to-babel: swc: parse: template-element', async (t) => {
-    await generateTest('templateElement', 'template-element', t);
+test('swc-to-babel: swc: parse: template-element', (t) => {
+    t.compile('template-element');
     t.end();
 });
 
-test('swc-to-babel: swc: export', async (t) => {
-    await generateTest('export', 'export', t);
+test('swc-to-babel: swc: export', (t) => {
+    t.compile('export');
     t.end();
 });
 
-test('swc-to-babel: swc: parens', async (t) => {
-    await generateTest('parens', 'parens', t);
+test('swc-to-babel: swc: parens', (t) => {
+    t.compile('parens');
     t.end();
 });
 
-test('swc-to-babel: swc: ClassMethod', async (t) => {
-    await generateTest('classMethod', 'class-method', t);
+test('swc-to-babel: swc: ClassMethod', (t) => {
+    t.compile('class-method');
     t.end();
 });
 
-test('swc-to-babel: swc: member-expression', async (t) => {
-    await generateTest('memberExpression', 'member-expression', t);
+test('swc-to-babel: swc: member-expression', (t) => {
+    t.compile('member-expression');
     t.end();
 });
 
-test('swc-to-babel: swc: spread', async (t) => {
-    await generateTest('spread', 'spread', t);
+test('swc-to-babel: swc: spread', (t) => {
+    t.compile('spread');
     t.end();
 });
 
-test('swc-to-babel: swc: call', async (t) => {
-    await generateTest('call', 'call', t);
+test('swc-to-babel: swc: call', (t) => {
+    t.compile('call');
     t.end();
 });
 
-test('swc-to-babel: swc: type-alias-declaration', async (t) => {
-    await generateTest('typeAliasDeclaration', 'type-alias-declaration', t);
+test('swc-to-babel: swc: type-alias-declaration', (t) => {
+    t.compile('type-alias-declaration');
     t.end();
 });
 
-test('swc-to-babel: swc: function', async (t) => {
-    await generateTest('function', 'function', t);
+test('swc-to-babel: swc: function', (t) => {
+    t.compile('function');
     t.end();
 });
 
-test('swc-to-babel: swc: array', async (t) => {
-    await generateTest('array', 'array', t);
+test('swc-to-babel: swc: array', (t) => {
+    t.compile('array');
     t.end();
 });
 
-test('swc-to-babel: swc: esm', async (t) => {
-    await generateTest('esm', 'esm', t);
+test('swc-to-babel: swc: esm', (t) => {
+    t.compile('esm');
     t.end();
 });
 
-test('swc-to-babel: swc: destructuring', async (t) => {
-    await generateTest('destructuring', 'destructuring', t);
+test('swc-to-babel: swc: destructuring', (t) => {
+    t.compile('destructuring');
     t.end();
 });
 
-test('swc-to-babel: swc: as', async (t) => {
-    await generateTest('as', 'as', t);
+test('swc-to-babel: swc: as', (t) => {
+    t.compile('as');
     t.end();
 });
 
-test('swc-to-babel: swc: object-expression', async (t) => {
-    await generateTest('objectExpression', 'object-expression', t);
+test('swc-to-babel: swc: object-expression', (t) => {
+    t.compile('object-expression');
     t.end();
 });
 
-test('swc-to-babel: swc: getter-setter', async (t) => {
-    await generateTest('getterSetter', 'getter-setter', t);
+test('swc-to-babel: swc: getter-setter', (t) => {
+    t.compile('getter-setter');
     t.end();
 });
 
-test('swc-to-babel: swc: no-src', async (t) => {
-    await generateTest('noSrc', 'no-src', t);
+test('swc-to-babel: swc: no-src', (t) => {
+    t.compile('no-src');
     t.end();
 });
 

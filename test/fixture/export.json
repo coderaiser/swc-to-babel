@@ -73,6 +73,11 @@
             },
             {
                 "type": "ExportDefaultDeclaration",
+                "exportKind": "value",
+                "assertions": []
+            },
+            {
+                "type": "ExportDefaultDeclaration",
                 "declaration": {
                     "type": "FunctionDeclaration",
                     "params": [],
