@@ -5,8 +5,12 @@ const {readFileSync, writeFileSync} = require('fs');
 
 const {extend} = require('supertape');
 const swc = require('@swc/core');
-
+const generate = require('@babel/generator').default;
 const swcToBabel = require('..');
+const {ESLint} = require('eslint');
+const eslint = new ESLint({
+    baseConfig: require('../.eslintrc.json'),
+});
 
 const json = (a) => JSON.parse(JSON.stringify(a));
 
@@ -23,6 +27,24 @@ const test = extend({
         };
     },
 });
+
+async function generateTest(name, key, t) {
+    const ast = swc.parseSync(fixture.js[name], {
+        syntax: 'typescript',
+    });
+    
+    const result = swcToBabel(ast, fixture.js[name]);
+    const {code} = generate(result);
+    
+    update(key, result);
+    let errors = 0;
+    
+    for (const current of await eslint.lintText(code, {filePath: 'file.ts'})) {
+        errors += current.fatalErrorCount;
+    }
+    
+    t.jsonEqual({ast: result, errors}, {ast: fixture.ast[name], errors: 0});
+}
 
 const fixtureDir = join(__dirname, 'fixture');
 
@@ -85,267 +107,108 @@ const fixture = {
     },
 };
 
-test('swc-to-babel: swc: parse: cwcModule', (t) => {
-    const ast = swc.parseSync(fixture.js.swcModule);
-    const result = swcToBabel(ast, fixture.js.swcModule);
-    
-    update('swc-module', result);
-    
-    t.jsonEqual(result, fixture.ast.swcModule);
+test('swc-to-babel: swc: parse: swcModule', async (t) => {
+    await generateTest('swcModule', 'swc-module', t);
     t.end();
 });
 
-test('swc-to-babel: swc: parse: identifier', (t) => {
-    const ast = swc.parseSync(fixture.js.identifier);
-    const result = swcToBabel(ast, fixture.js.identifier);
-    
-    update('identifier', result);
-    
-    t.jsonEqual(result, fixture.ast.identifier);
+test('swc-to-babel: swc: parse: identifier', async (t) => {
+    await generateTest('identifier', 'identifier', t);
     t.end();
 });
 
-test('swc-to-babel: swc: parse: BlockStatement', (t) => {
-    const ast = swc.parseSync(fixture.js.blockStatement);
-    const result = swcToBabel(ast, fixture.js.blockStatement);
-    
-    update('block-statement', result);
-    
-    t.jsonEqual(result, fixture.ast.blockStatement);
+test('swc-to-babel: swc: parse: BlockStatement', async (t) => {
+    await generateTest('blockStatement', 'block-statement', t);
     t.end();
 });
 
-test('swc-to-babel: swc: parse: position', (t) => {
-    const name = 'position';
-    const ast = swc.parseSync(fixture.js[name]);
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update(name, result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: parse: position', async (t) => {
+    await generateTest('position', 'position', t);
     t.end();
 });
 
-test('swc-to-babel: swc: parse: keyof', (t) => {
-    const name = 'keyof';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update(name, result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: parse: keyof', async (t) => {
+    await generateTest('keyof', 'keyof', t);
     t.end();
 });
 
-test('swc-to-babel: swc: parse: template-element', (t) => {
-    const name = 'templateElement';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('template-element', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: parse: template-element', async (t) => {
+    await generateTest('templateElement', 'template-element', t);
     t.end();
 });
 
-test('swc-to-babel: swc: export', (t) => {
-    const name = 'export';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('export', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: export', async (t) => {
+    await generateTest('export', 'export', t);
     t.end();
 });
 
-test('swc-to-babel: swc: parens', (t) => {
-    const name = 'parens';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('parens', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: parens', async (t) => {
+    await generateTest('parens', 'parens', t);
     t.end();
 });
 
-test('swc-to-babel: swc: ClassMethod', (t) => {
-    const name = 'classMethod';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('class-method', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: ClassMethod', async (t) => {
+    await generateTest('classMethod', 'class-method', t);
     t.end();
 });
 
-test('swc-to-babel: swc: member-expression', (t) => {
-    const name = 'memberExpression';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('member-expression', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: member-expression', async (t) => {
+    await generateTest('memberExpression', 'member-expression', t);
     t.end();
 });
 
-test('swc-to-babel: swc: spread', (t) => {
-    const name = 'spread';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('spread', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: spread', async (t) => {
+    await generateTest('spread', 'spread', t);
     t.end();
 });
 
-test('swc-to-babel: swc: call', (t) => {
-    const name = 'call';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('call', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: call', async (t) => {
+    await generateTest('call', 'call', t);
     t.end();
 });
 
-test('swc-to-babel: swc: type-alias-declaration', (t) => {
-    const name = 'typeAliasDeclaration';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('type-alias-declaration', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: type-alias-declaration', async (t) => {
+    await generateTest('typeAliasDeclaration', 'type-alias-declaration', t);
     t.end();
 });
 
-test('swc-to-babel: swc: function', (t) => {
-    const name = 'function';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('function', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: function', async (t) => {
+    await generateTest('function', 'function', t);
     t.end();
 });
 
-test('swc-to-babel: swc: array', (t) => {
-    const name = 'array';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('array', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: array', async (t) => {
+    await generateTest('array', 'array', t);
     t.end();
 });
 
-test('swc-to-babel: swc: esm', (t) => {
-    const name = 'esm';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('esm', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: esm', async (t) => {
+    await generateTest('esm', 'esm', t);
     t.end();
 });
 
-test('swc-to-babel: swc: destructuring', (t) => {
-    const name = 'destructuring';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('destructuring', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: destructuring', async (t) => {
+    await generateTest('destructuring', 'destructuring', t);
     t.end();
 });
 
-test('swc-to-babel: swc: as', (t) => {
-    const name = 'as';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('as', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: as', async (t) => {
+    await generateTest('as', 'as', t);
     t.end();
 });
 
-test('swc-to-babel: swc: object-expression', (t) => {
-    const name = 'objectExpression';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('object-expression', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: object-expression', async (t) => {
+    await generateTest('objectExpression', 'object-expression', t);
     t.end();
 });
 
-test('swc-to-babel: swc: getter-setter', (t) => {
-    const name = 'getterSetter';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('getter-setter', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: getter-setter', async (t) => {
+    await generateTest('getterSetter', 'getter-setter', t);
     t.end();
 });
 
-test('swc-to-babel: swc: no-src', (t) => {
-    const name = 'noSrc';
-    const ast = swc.parseSync(fixture.js[name], {
-        syntax: 'typescript',
-    });
-    
-    const result = swcToBabel(ast, fixture.js[name]);
-    
-    update('no-src', result);
-    
-    t.jsonEqual(result, fixture.ast[name]);
+test('swc-to-babel: swc: no-src', async (t) => {
+    await generateTest('noSrc', 'no-src', t);
     t.end();
 });
+

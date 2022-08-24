@@ -32,9 +32,44 @@
                 "exportKind": "value"
             },
             {
-                "type": "ExportDefaultDeclaration",
-                "exportKind": "value",
-                "assertions": []
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "b"
+                        },
+                        "init": {
+                            "type": "StringLiteral",
+                            "value": "hi",
+                            "raw": "'hi'",
+                            "extra": {
+                                "raw": "'hi'"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ExportNamedDeclaration",
+                "specifiers": [
+                    {
+                        "type": "ExportSpecifier",
+                        "exported": {
+                            "type": "Identifier",
+                            "name": "b"
+                        },
+                        "local": {
+                            "type": "Identifier",
+                            "name": "b"
+                        }
+                    }
+                ],
+                "source": null,
+                "assertions": [],
+                "exportKind": "value"
             },
             {
                 "type": "ExportDefaultDeclaration",

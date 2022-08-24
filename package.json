@@ -39,6 +39,7 @@
     "espree"
   ],
   "devDependencies": {
+    "@babel/generator": "^7.18.13",
     "c8": "^7.6.0",
     "check-dts": "^0.6.7",
     "eslint": "^8.0.0",
