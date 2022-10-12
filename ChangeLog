@@ -1,3 +1,11 @@
+2022.10.12, v1.26.0
+
+fix:
+- swc-to-babel: parenthesized const assertion error (#15)
+
+feature:
+- package: supertape v8.1.0
+
 2022.08.24, v1.25.1
 
 fix:
