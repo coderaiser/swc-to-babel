@@ -47,7 +47,7 @@ const update = (a, json) => {
     if (!isUpdate)
         return;
     
-    writeFileSync(`${fixtureDir}/${a}.json`, JSON.stringify(json, null, 4));
+    writeFileSync(`${fixtureDir}/${a}.json`, `${JSON.stringify(json, null, 4)}\n`);
 };
 
 const readJS = (a) => readFileSync(join(`${fixtureDir}/${a}`), 'utf8');
