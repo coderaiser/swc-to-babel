@@ -48,6 +48,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `ExportSpecifier` has `local` which is never `null` instead of `orig`;
 - `ExportDefaultDeclaration` has `declaration` instead of `decl`;
 - `TSAnyKeyword` instead of `TSKeywordType`;
+- `TSAsExpression` instead of `TsConstAssertion`;
 - `ObjectMethod` with `kind: get` instead of `GetterProperty`
 - `ObjectMethod` with `kind: set` instead of `SetterProperty`
 - etc...

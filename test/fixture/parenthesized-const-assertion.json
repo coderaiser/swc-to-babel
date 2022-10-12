@@ -1,0 +1,39 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "TSAsExpression",
+                    "expression": {
+                        "type": "NumericLiteral",
+                        "value": 1,
+                        "raw": "1",
+                        "extra": {
+                            "raw": "1"
+                        }
+                    },
+                    "extra": {
+                        "parenthesized": true,
+                        "parenStart": 0
+                    },
+                    "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                            "type": "Identifier"
+                        }
+                    },
+                    "trailingComments": [],
+                    "leadingComments": [],
+                    "innerComments": []
+                }
+            }
+        ],
+        "interpreter": null,
+        "directives": [],
+        "sourceType": "module"
+    },
+    "comments": []
+}
