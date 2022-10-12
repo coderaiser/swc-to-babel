@@ -75,6 +75,7 @@ const fixture = {
         'object-expression': readJSON('object-expression.json'),
         'getter-setter': readJSON('getter-setter.json'),
         'no-src': readJSON('no-src.json'),
+        'parenthesized-const-assertion': readJSON('parenthesized-const-assertion.json'),
     },
     js: {
         'swc-module': readJS('swc-module.js'),
@@ -98,6 +99,7 @@ const fixture = {
         'object-expression': readJS('object-expression.js'),
         'getter-setter': readJS('getter-setter.js'),
         'no-src': readJS('no-src.js'),
+        'parenthesized-const-assertion': readJS('parenthesized-const-assertion.ts'),
     },
 };
 
@@ -206,3 +208,7 @@ test('swc-to-babel: swc: no-src', (t) => {
     t.end();
 });
 
+test('swc-to-babel: swc: parenthesized-const-assertion', (t) => {
+    t.compile('parenthesized-const-assertion');
+    t.end();
+});
