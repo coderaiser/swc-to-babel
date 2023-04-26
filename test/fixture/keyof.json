@@ -32,6 +32,7 @@
                     "typeParameter": {
                         "type": "TSTypeParameter",
                         "name": "__b",
+                        "const": false,
                         "constraint": {
                             "type": "TSTypeOperator",
                             "typeAnnotation": {

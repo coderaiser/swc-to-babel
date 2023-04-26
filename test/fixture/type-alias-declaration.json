@@ -33,6 +33,7 @@
                     "typeParameter": {
                         "type": "TSTypeParameter",
                         "name": "Key",
+                        "const": false,
                         "constraint": {
                             "type": "TSTypeOperator",
                             "typeAnnotation": {
@@ -77,6 +78,7 @@
                     "typeParameter": {
                         "type": "TSTypeParameter",
                         "name": "__b",
+                        "const": false,
                         "constraint": {
                             "type": "TSTypeOperator",
                             "typeAnnotation": {
