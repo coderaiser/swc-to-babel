@@ -1,6 +1,7 @@
 'use strict';
 
 const {join} = require('path');
+
 const {
     readFileSync,
     writeFileSync,
