@@ -50,7 +50,7 @@
     "putout": "^29.3.0",
     "supertape": "^8.1.0",
     "try-catch": "^3.0.1",
-    "typescript": "^4.5.2"
+    "typescript": "^5.0.4"
   },
   "license": "MIT",
   "engines": {
