@@ -1,7 +1,10 @@
 'use strict';
 
 const {join} = require('path');
-const {readFileSync, writeFileSync} = require('fs');
+const {
+    readFileSync,
+    writeFileSync,
+} = require('fs');
 
 const {extend} = require('supertape');
 const swc = require('@swc/core');
@@ -16,7 +19,10 @@ const test = extend({
         if (error)
             return operator.fail(error.message);
         
-        const {is, output} = operator.deepEqual(json(actual), json(expected));
+        const {
+            is,
+            output,
+        } = operator.deepEqual(json(actual), json(expected));
         
         return {
             is,
@@ -43,6 +49,7 @@ const test = extend({
 const fixtureDir = join(__dirname, 'fixture');
 
 const isUpdate = process.env.UPDATE;
+
 const update = (a, json) => {
     if (!isUpdate)
         return;
@@ -52,6 +59,7 @@ const update = (a, json) => {
 
 const readJS = (a) => readFileSync(join(`${fixtureDir}/${a}`), 'utf8');
 const readJSON = (a) => require(`${fixtureDir}/${a}`);
+
 const fixture = {
     ast: {
         'swc-module': readJSON('swc-module.json'),
