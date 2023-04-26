@@ -16,6 +16,7 @@
                         "init": {
                             "type": "ArrayExpression",
                             "elements": [
+                                null,
                                 {
                                     "type": "Identifier",
                                     "name": "__a"
