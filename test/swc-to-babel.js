@@ -1,11 +1,7 @@
 'use strict';
 
 const {join} = require('path');
-
-const {
-    readFileSync,
-    writeFileSync,
-} = require('fs');
+const {readFileSync, writeFileSync} = require('fs');
 
 const {extend} = require('supertape');
 const swc = require('@swc/core');
@@ -20,10 +16,7 @@ const test = extend({
         if (error)
             return operator.fail(error.message);
         
-        const {
-            is,
-            output,
-        } = operator.deepEqual(json(actual), json(expected));
+        const {is, output} = operator.deepEqual(json(actual), json(expected));
         
         return {
             is,
