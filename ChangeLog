@@ -1,3 +1,12 @@
+2023.07.12, v2.1.0
+
+feature:
+- 68dfe2d package: eslint-plugin-putout v18.1.0
+- a303550 package: c8 v8.0.0
+- 8e70e4c package: putout v30.4.0
+- 8f5df0a package: eslint-plugin-n v16.0.1
+- 19700e5 package: nodemon v3.0.1
+
 2023.04.26, v2.0.0
 
 fix:
