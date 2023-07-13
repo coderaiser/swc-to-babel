@@ -11,12 +11,18 @@
                         "type": "MemberExpression",
                         "object": {
                             "type": "Identifier",
+                            "start": 152,
+                            "end": 154,
                             "name": "to"
                         },
                         "property": {
                             "type": "Identifier",
+                            "start": 155,
+                            "end": 160,
                             "name": "equal"
                         },
+                        "start": 152,
+                        "end": 160,
                         "computed": false
                     },
                     "arguments": [
@@ -26,20 +32,30 @@
                             "quasis": [
                                 {
                                     "type": "TemplateElement",
+                                    "start": 162,
+                                    "end": 167,
                                     "value": {
                                         "cooked": "hello",
                                         "raw": "hello"
                                     }
                                 }
                             ],
+                            "start": 161,
+                            "end": 168,
                             "extra": {}
                         }
-                    ]
-                }
+                    ],
+                    "start": 152,
+                    "end": 169
+                },
+                "start": 152,
+                "end": 170
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 152,
+        "end": 170,
         "sourceType": "module"
     },
     "comments": []

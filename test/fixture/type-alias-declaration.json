@@ -7,6 +7,8 @@
                 "type": "TSTypeAliasDeclaration",
                 "id": {
                     "type": "Identifier",
+                    "start": 618,
+                    "end": 619,
                     "name": "A"
                 },
                 "typeAnnotation": {
@@ -19,17 +21,29 @@
                             "type": "TSTypeReference",
                             "typeName": {
                                 "type": "Identifier",
+                                "start": 658,
+                                "end": 662,
                                 "name": "Type"
-                            }
+                            },
+                            "start": 658,
+                            "end": 662
                         },
                         "indexType": {
                             "type": "TSTypeReference",
                             "typeName": {
                                 "type": "Identifier",
+                                "start": 663,
+                                "end": 666,
                                 "name": "Key"
-                            }
-                        }
+                            },
+                            "start": 663,
+                            "end": 666
+                        },
+                        "start": 658,
+                        "end": 667
                     },
+                    "start": 622,
+                    "end": 670,
                     "typeParameter": {
                         "type": "TSTypeParameter",
                         "name": "Key",
@@ -40,18 +54,30 @@
                                 "type": "TSTypeReference",
                                 "typeName": {
                                     "type": "Identifier",
+                                    "start": 651,
+                                    "end": 655,
                                     "name": "Type"
-                                }
+                                },
+                                "start": 651,
+                                "end": 655
                             },
+                            "start": 645,
+                            "end": 655,
                             "operator": "keyof"
-                        }
+                        },
+                        "start": 638,
+                        "end": 655
                     }
-                }
+                },
+                "start": 613,
+                "end": 670
             },
             {
                 "type": "TSTypeAliasDeclaration",
                 "id": {
                     "type": "Identifier",
+                    "start": 677,
+                    "end": 680,
                     "name": "__a"
                 },
                 "typeAnnotation": {
@@ -64,17 +90,29 @@
                             "type": "TSTypeReference",
                             "typeName": {
                                 "type": "Identifier",
+                                "start": 705,
+                                "end": 708,
                                 "name": "__c"
-                            }
+                            },
+                            "start": 705,
+                            "end": 708
                         },
                         "indexType": {
                             "type": "TSTypeReference",
                             "typeName": {
                                 "type": "Identifier",
+                                "start": 709,
+                                "end": 712,
                                 "name": "__b"
-                            }
-                        }
+                            },
+                            "start": 709,
+                            "end": 712
+                        },
+                        "start": 705,
+                        "end": 713
                     },
+                    "start": 683,
+                    "end": 715,
                     "typeParameter": {
                         "type": "TSTypeParameter",
                         "name": "__b",
@@ -85,17 +123,29 @@
                                 "type": "TSTypeReference",
                                 "typeName": {
                                     "type": "Identifier",
+                                    "start": 698,
+                                    "end": 701,
                                     "name": "__c"
-                                }
+                                },
+                                "start": 698,
+                                "end": 701
                             },
+                            "start": 692,
+                            "end": 701,
                             "operator": "keyof"
-                        }
+                        },
+                        "start": 685,
+                        "end": 701
                     }
-                }
+                },
+                "start": 672,
+                "end": 715
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 613,
+        "end": 715,
         "sourceType": "module"
     },
     "comments": []

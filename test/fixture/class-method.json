@@ -12,12 +12,18 @@
                             "type": "ClassMethod",
                             "key": {
                                 "type": "Identifier",
+                                "start": 355,
+                                "end": 361,
                                 "name": "render"
                             },
                             "kind": "method",
+                            "start": 355,
+                            "end": 365,
                             "params": [],
                             "body": {
                                 "type": "BlockStatement",
+                                "start": 363,
+                                "end": 365,
                                 "body": [],
                                 "directives": []
                             },
@@ -29,10 +35,16 @@
                 },
                 "superClass": {
                     "type": "Identifier",
+                    "start": 344,
+                    "end": 353,
                     "name": "Component"
                 },
+                "start": 323,
+                "end": 366,
                 "id": {
                     "type": "Identifier",
+                    "start": 329,
+                    "end": 335,
                     "name": "Button"
                 }
             },
@@ -47,18 +59,28 @@
                             "type": "MemberExpression",
                             "object": {
                                 "type": "Identifier",
+                                "start": 368,
+                                "end": 374,
                                 "name": "module"
                             },
                             "property": {
                                 "type": "Identifier",
+                                "start": 375,
+                                "end": 382,
                                 "name": "exports"
                             },
+                            "start": 368,
+                            "end": 382,
                             "computed": false
                         },
                         "property": {
                             "type": "Identifier",
+                            "start": 383,
+                            "end": 386,
                             "name": "__a"
                         },
+                        "start": 368,
+                        "end": 386,
                         "computed": false
                     },
                     "right": {
@@ -68,16 +90,26 @@
                             "body": []
                         },
                         "superClass": null,
+                        "start": 389,
+                        "end": 401,
                         "id": {
                             "type": "Identifier",
+                            "start": 395,
+                            "end": 398,
                             "name": "__a"
                         }
-                    }
-                }
+                    },
+                    "start": 368,
+                    "end": 401
+                },
+                "start": 368,
+                "end": 402
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 323,
+        "end": 402,
         "sourceType": "module"
     },
     "comments": []

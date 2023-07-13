@@ -16,21 +16,29 @@
                                     "type": "ObjectProperty",
                                     "key": {
                                         "type": "Identifier",
+                                        "start": 983,
+                                        "end": 988,
                                         "name": "world"
                                     },
                                     "value": {
                                         "type": "Identifier",
+                                        "start": 990,
+                                        "end": 995,
                                         "name": "world"
                                     },
                                     "shorthand": false
                                 }
                             ],
-                            "typeAnnotation": null
+                            "typeAnnotation": null,
+                            "start": 977,
+                            "end": 998
                         },
                         "init": {
                             "type": "CallExpression",
                             "callee": {
                                 "type": "Identifier",
+                                "start": 1001,
+                                "end": 1008,
                                 "name": "require"
                             },
                             "arguments": [
@@ -38,14 +46,22 @@
                                     "type": "StringLiteral",
                                     "value": "./hi",
                                     "raw": "\"./hi\"",
+                                    "start": 1009,
+                                    "end": 1015,
                                     "extra": {
                                         "raw": "\"./hi\""
                                     }
                                 }
-                            ]
-                        }
+                            ],
+                            "start": 1001,
+                            "end": 1016
+                        },
+                        "start": 977,
+                        "end": 1016
                     }
-                ]
+                ],
+                "start": 971,
+                "end": 1017
             },
             {
                 "type": "VariableDeclaration",
@@ -60,21 +76,31 @@
                                     "type": "ObjectProperty",
                                     "key": {
                                         "type": "Identifier",
+                                        "start": 1031,
+                                        "end": 1036,
                                         "name": "hello"
                                     },
                                     "value": {
                                         "type": "Identifier",
+                                        "start": 1031,
+                                        "end": 1036,
                                         "name": "hello"
                                     },
+                                    "start": 1031,
+                                    "end": 1036,
                                     "shorthand": true
                                 }
                             ],
-                            "typeAnnotation": null
+                            "typeAnnotation": null,
+                            "start": 1025,
+                            "end": 1039
                         },
                         "init": {
                             "type": "CallExpression",
                             "callee": {
                                 "type": "Identifier",
+                                "start": 1042,
+                                "end": 1049,
                                 "name": "require"
                             },
                             "arguments": [
@@ -82,18 +108,28 @@
                                     "type": "StringLiteral",
                                     "value": "./hi",
                                     "raw": "\"./hi\"",
+                                    "start": 1050,
+                                    "end": 1056,
                                     "extra": {
                                         "raw": "\"./hi\""
                                     }
                                 }
-                            ]
-                        }
+                            ],
+                            "start": 1042,
+                            "end": 1057
+                        },
+                        "start": 1025,
+                        "end": 1057
                     }
-                ]
+                ],
+                "start": 1019,
+                "end": 1058
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 971,
+        "end": 1058,
         "sourceType": "module"
     },
     "comments": []

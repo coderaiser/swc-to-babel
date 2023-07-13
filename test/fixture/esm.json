@@ -10,18 +10,26 @@
                         "type": "ImportDefaultSpecifier",
                         "local": {
                             "type": "Identifier",
+                            "start": 896,
+                            "end": 905,
                             "name": "__imports"
-                        }
+                        },
+                        "start": 896,
+                        "end": 905
                     }
                 ],
                 "source": {
                     "type": "StringLiteral",
                     "value": "__a",
                     "raw": "\"__a\"",
+                    "start": 911,
+                    "end": 916,
                     "extra": {
                         "raw": "\"__a\""
                     }
                 },
+                "start": 889,
+                "end": 916,
                 "assertions": [],
                 "importKind": "value"
             },
@@ -32,22 +40,32 @@
                         "type": "ImportSpecifier",
                         "local": {
                             "type": "Identifier",
+                            "start": 925,
+                            "end": 926,
                             "name": "a"
                         },
                         "imported": {
                             "type": "Identifier",
+                            "start": 925,
+                            "end": 926,
                             "name": "a"
-                        }
+                        },
+                        "start": 925,
+                        "end": 926
                     }
                 ],
                 "source": {
                     "type": "StringLiteral",
                     "value": "b",
                     "raw": "'b'",
+                    "start": 933,
+                    "end": 936,
                     "extra": {
                         "raw": "'b'"
                     }
                 },
+                "start": 917,
+                "end": 937,
                 "assertions": [],
                 "importKind": "value"
             },
@@ -60,11 +78,17 @@
                         "body": []
                     },
                     "superClass": null,
+                    "start": 946,
+                    "end": 957,
                     "id": {
                         "type": "Identifier",
+                        "start": 952,
+                        "end": 954,
                         "name": "Hi"
                     }
                 },
+                "start": 939,
+                "end": 957,
                 "assertions": [],
                 "source": null,
                 "specifiers": [],
@@ -77,21 +101,31 @@
                         "type": "ExportSpecifier",
                         "exported": {
                             "type": "Identifier",
+                            "start": 966,
+                            "end": 967,
                             "name": "x"
                         },
+                        "start": 966,
+                        "end": 967,
                         "local": {
                             "type": "Identifier",
+                            "start": 966,
+                            "end": 967,
                             "name": "x"
                         }
                     }
                 ],
                 "source": null,
+                "start": 958,
+                "end": 969,
                 "assertions": [],
                 "exportKind": "value"
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 889,
+        "end": 969,
         "sourceType": "module"
     },
     "comments": []

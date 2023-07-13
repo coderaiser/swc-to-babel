@@ -13,19 +13,29 @@
                             "type": "VariableDeclarator",
                             "id": {
                                 "type": "Identifier",
+                                "start": 185,
+                                "end": 188,
                                 "name": "__a"
                             },
                             "init": {
                                 "type": "NumericLiteral",
                                 "value": 5,
                                 "raw": "5",
+                                "start": 191,
+                                "end": 192,
                                 "extra": {
                                     "raw": "5"
                                 }
-                            }
+                            },
+                            "start": 185,
+                            "end": 192
                         }
-                    ]
+                    ],
+                    "start": 179,
+                    "end": 193
                 },
+                "start": 172,
+                "end": 193,
                 "assertions": [],
                 "source": null,
                 "specifiers": [],
@@ -39,18 +49,26 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
+                            "start": 201,
+                            "end": 202,
                             "name": "b"
                         },
                         "init": {
                             "type": "StringLiteral",
                             "value": "hi",
                             "raw": "'hi'",
+                            "start": 205,
+                            "end": 209,
                             "extra": {
                                 "raw": "'hi'"
                             }
-                        }
+                        },
+                        "start": 201,
+                        "end": 209
                     }
-                ]
+                ],
+                "start": 195,
+                "end": 210
             },
             {
                 "type": "ExportNamedDeclaration",
@@ -59,30 +77,44 @@
                         "type": "ExportSpecifier",
                         "exported": {
                             "type": "Identifier",
+                            "start": 225,
+                            "end": 226,
                             "name": "b"
                         },
+                        "start": 225,
+                        "end": 226,
                         "local": {
                             "type": "Identifier",
+                            "start": 225,
+                            "end": 226,
                             "name": "b"
                         }
                     }
                 ],
                 "source": null,
+                "start": 212,
+                "end": 230,
                 "assertions": [],
                 "exportKind": "value"
             },
             {
                 "type": "ExportDefaultDeclaration",
+                "start": 232,
+                "end": 249,
                 "exportKind": "value",
                 "assertions": []
             },
             {
                 "type": "ExportDefaultDeclaration",
+                "start": 251,
+                "end": 315,
                 "declaration": {
                     "type": "FunctionDeclaration",
                     "params": [],
                     "body": {
                         "type": "BlockStatement",
+                        "start": 289,
+                        "end": 315,
                         "body": [
                             {
                                 "type": "VariableDeclaration",
@@ -92,26 +124,38 @@
                                         "type": "VariableDeclarator",
                                         "id": {
                                             "type": "Identifier",
+                                            "start": 301,
+                                            "end": 302,
                                             "name": "t"
                                         },
                                         "init": {
                                             "type": "StringLiteral",
                                             "value": "hello",
                                             "raw": "'hello'",
+                                            "start": 305,
+                                            "end": 312,
                                             "extra": {
                                                 "raw": "'hello'"
                                             }
-                                        }
+                                        },
+                                        "start": 301,
+                                        "end": 312
                                     }
-                                ]
+                                ],
+                                "start": 295,
+                                "end": 313
                             }
                         ],
                         "directives": []
                     },
                     "generator": false,
                     "async": false,
+                    "start": 266,
+                    "end": 315,
                     "id": {
                         "type": "Identifier",
+                        "start": 275,
+                        "end": 286,
                         "name": "addCommands"
                     }
                 },
@@ -121,6 +165,8 @@
         ],
         "interpreter": null,
         "directives": [],
+        "start": 172,
+        "end": 315,
         "sourceType": "module"
     },
     "comments": []

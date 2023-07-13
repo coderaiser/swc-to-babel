@@ -11,22 +11,32 @@
                         "type": "NumericLiteral",
                         "value": 5,
                         "raw": "5",
+                        "start": 1061,
+                        "end": 1062,
                         "extra": {
                             "raw": "5"
                         }
                     },
                     "typeAnnotation": {
                         "type": "TSAnyKeyword",
-                        "kind": "any"
+                        "kind": "any",
+                        "start": 1066,
+                        "end": 1069
                     },
                     "trailingComments": [],
                     "leadingComments": [],
-                    "innerComments": []
-                }
+                    "innerComments": [],
+                    "start": 1061,
+                    "end": 1069
+                },
+                "start": 1060,
+                "end": 1070
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 1060,
+        "end": 1070,
         "sourceType": "module"
     },
     "comments": []

@@ -11,23 +11,33 @@
                         "type": "MemberExpression",
                         "object": {
                             "type": "Identifier",
+                            "start": 1072,
+                            "end": 1078,
                             "name": "Object"
                         },
                         "property": {
                             "type": "Identifier",
+                            "start": 1079,
+                            "end": 1093,
                             "name": "defineProperty"
                         },
+                        "start": 1072,
+                        "end": 1093,
                         "computed": false
                     },
                     "arguments": [
                         {
                             "type": "Identifier",
+                            "start": 1094,
+                            "end": 1101,
                             "name": "exports"
                         },
                         {
                             "type": "StringLiteral",
                             "value": "__esModule",
                             "raw": "'__esModule'",
+                            "start": 1103,
+                            "end": 1115,
                             "extra": {
                                 "raw": "'__esModule'"
                             }
@@ -39,23 +49,35 @@
                                     "type": "ObjectProperty",
                                     "key": {
                                         "type": "Identifier",
+                                        "start": 1121,
+                                        "end": 1126,
                                         "name": "value"
                                     },
                                     "value": {
                                         "type": "BooleanLiteral",
                                         "value": true,
+                                        "start": 1128,
+                                        "end": 1132,
                                         "extra": {}
                                     },
                                     "shorthand": false
                                 }
-                            ]
+                            ],
+                            "start": 1117,
+                            "end": 1134
                         }
-                    ]
-                }
+                    ],
+                    "start": 1072,
+                    "end": 1135
+                },
+                "start": 1072,
+                "end": 1136
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 1072,
+        "end": 1136,
         "sourceType": "module"
     },
     "comments": []

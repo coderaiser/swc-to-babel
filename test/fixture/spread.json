@@ -14,18 +14,28 @@
                                 "type": "NewExpression",
                                 "callee": {
                                     "type": "Identifier",
+                                    "start": 423,
+                                    "end": 426,
                                     "name": "Set"
                                 },
                                 "arguments": [
                                     {
                                         "type": "Identifier",
+                                        "start": 427,
+                                        "end": 430,
                                         "name": "__a"
                                     }
-                                ]
+                                ],
+                                "start": 419,
+                                "end": 431
                             }
                         }
-                    ]
-                }
+                    ],
+                    "start": 415,
+                    "end": 432
+                },
+                "start": 415,
+                "end": 433
             },
             {
                 "type": "ExpressionStatement",
@@ -38,13 +48,21 @@
                                 "type": "NewExpression",
                                 "callee": {
                                     "type": "Identifier",
+                                    "start": 442,
+                                    "end": 445,
                                     "name": "Set"
                                 },
-                                "arguments": []
+                                "arguments": [],
+                                "start": 438,
+                                "end": 445
                             }
                         }
-                    ]
-                }
+                    ],
+                    "start": 434,
+                    "end": 446
+                },
+                "start": 434,
+                "end": 447
             },
             {
                 "type": "VariableDeclaration",
@@ -54,6 +72,8 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
+                            "start": 455,
+                            "end": 461,
                             "name": "places"
                         },
                         "init": {
@@ -63,6 +83,8 @@
                                     "type": "SpreadElement",
                                     "argument": {
                                         "type": "Identifier",
+                                        "start": 473,
+                                        "end": 474,
                                         "name": "a"
                                     }
                                 },
@@ -70,17 +92,27 @@
                                     "type": "SpreadElement",
                                     "argument": {
                                         "type": "Identifier",
+                                        "start": 483,
+                                        "end": 484,
                                         "name": "b"
                                     }
                                 }
-                            ]
-                        }
+                            ],
+                            "start": 464,
+                            "end": 486
+                        },
+                        "start": 455,
+                        "end": 486
                     }
-                ]
+                ],
+                "start": 449,
+                "end": 487
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 415,
+        "end": 487,
         "sourceType": "module"
     },
     "comments": []

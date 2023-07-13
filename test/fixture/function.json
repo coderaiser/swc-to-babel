@@ -8,18 +8,26 @@
                 "params": [
                     {
                         "type": "Identifier",
+                        "start": 730,
+                        "end": 736,
                         "name": "__args"
                     }
                 ],
                 "body": {
                     "type": "BlockStatement",
+                    "start": 737,
+                    "end": 739,
                     "body": [],
                     "directives": []
                 },
                 "generator": false,
                 "async": false,
+                "start": 718,
+                "end": 739,
                 "id": {
                     "type": "Identifier",
+                    "start": 727,
+                    "end": 729,
                     "name": "__"
                 }
             },
@@ -31,6 +39,8 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
+                            "start": 746,
+                            "end": 747,
                             "name": "a"
                         },
                         "init": {
@@ -38,20 +48,30 @@
                             "params": [
                                 {
                                     "type": "Identifier",
+                                    "start": 760,
+                                    "end": 766,
                                     "name": "__args"
                                 }
                             ],
                             "body": {
                                 "type": "BlockStatement",
+                                "start": 767,
+                                "end": 769,
                                 "body": [],
                                 "directives": []
                             },
                             "generator": false,
                             "async": false,
+                            "start": 750,
+                            "end": 769,
                             "id": null
-                        }
+                        },
+                        "start": 746,
+                        "end": 769
                     }
-                ]
+                ],
+                "start": 740,
+                "end": 770
             },
             {
                 "type": "VariableDeclaration",
@@ -61,6 +81,8 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
+                            "start": 777,
+                            "end": 778,
                             "name": "b"
                         },
                         "init": {
@@ -68,23 +90,35 @@
                             "params": [
                                 {
                                     "type": "Identifier",
+                                    "start": 792,
+                                    "end": 798,
                                     "name": "__args"
                                 }
                             ],
                             "body": {
                                 "type": "BlockStatement",
+                                "start": 799,
+                                "end": 801,
                                 "body": [],
                                 "directives": []
                             },
                             "generator": false,
                             "async": false,
+                            "start": 781,
+                            "end": 801,
                             "id": {
                                 "type": "Identifier",
+                                "start": 790,
+                                "end": 791,
                                 "name": "x"
                             }
-                        }
+                        },
+                        "start": 777,
+                        "end": 801
                     }
-                ]
+                ],
+                "start": 771,
+                "end": 802
             },
             {
                 "type": "ExpressionStatement",
@@ -93,6 +127,8 @@
                     "params": [
                         {
                             "type": "Identifier",
+                            "start": 804,
+                            "end": 813,
                             "name": "__args__a"
                         }
                     ],
@@ -100,19 +136,29 @@
                         "type": "CallExpression",
                         "callee": {
                             "type": "Identifier",
+                            "start": 818,
+                            "end": 821,
                             "name": "__b"
                         },
                         "arguments": [
                             {
                                 "type": "Identifier",
+                                "start": 822,
+                                "end": 831,
                                 "name": "__args__a"
                             }
-                        ]
+                        ],
+                        "start": 818,
+                        "end": 832
                     },
                     "async": false,
                     "generator": false,
+                    "start": 803,
+                    "end": 832,
                     "id": null
-                }
+                },
+                "start": 803,
+                "end": 833
             },
             {
                 "type": "ExpressionStatement",
@@ -121,11 +167,15 @@
                     "params": [
                         {
                             "type": "Identifier",
+                            "start": 835,
+                            "end": 844,
                             "name": "__args__a"
                         }
                     ],
                     "body": {
                         "type": "BlockStatement",
+                        "start": 849,
+                        "end": 866,
                         "body": [
                             {
                                 "type": "ExpressionStatement",
@@ -133,27 +183,41 @@
                                     "type": "CallExpression",
                                     "callee": {
                                         "type": "Identifier",
+                                        "start": 850,
+                                        "end": 853,
                                         "name": "__b"
                                     },
                                     "arguments": [
                                         {
                                             "type": "Identifier",
+                                            "start": 854,
+                                            "end": 863,
                                             "name": "__args__a"
                                         }
-                                    ]
-                                }
+                                    ],
+                                    "start": 850,
+                                    "end": 864
+                                },
+                                "start": 850,
+                                "end": 865
                             }
                         ],
                         "directives": []
                     },
                     "async": false,
                     "generator": false,
+                    "start": 834,
+                    "end": 866,
                     "id": null
-                }
+                },
+                "start": 834,
+                "end": 866
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 718,
+        "end": 866,
         "sourceType": "module"
     },
     "comments": []

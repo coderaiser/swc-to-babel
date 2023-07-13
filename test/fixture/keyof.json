@@ -7,6 +7,8 @@
                 "type": "TSTypeAliasDeclaration",
                 "id": {
                     "type": "Identifier",
+                    "start": 113,
+                    "end": 116,
                     "name": "__a"
                 },
                 "typeAnnotation": {
@@ -18,17 +20,29 @@
                             "type": "TSTypeReference",
                             "typeName": {
                                 "type": "Identifier",
+                                "start": 140,
+                                "end": 143,
                                 "name": "__c"
-                            }
+                            },
+                            "start": 140,
+                            "end": 143
                         },
                         "indexType": {
                             "type": "TSTypeReference",
                             "typeName": {
                                 "type": "Identifier",
+                                "start": 144,
+                                "end": 147,
                                 "name": "__b"
-                            }
-                        }
+                            },
+                            "start": 144,
+                            "end": 147
+                        },
+                        "start": 140,
+                        "end": 148
                     },
+                    "start": 119,
+                    "end": 150,
                     "typeParameter": {
                         "type": "TSTypeParameter",
                         "name": "__b",
@@ -39,17 +53,29 @@
                                 "type": "TSTypeReference",
                                 "typeName": {
                                     "type": "Identifier",
+                                    "start": 134,
+                                    "end": 137,
                                     "name": "__c"
-                                }
+                                },
+                                "start": 134,
+                                "end": 137
                             },
+                            "start": 128,
+                            "end": 137,
                             "operator": "keyof"
-                        }
+                        },
+                        "start": 121,
+                        "end": 137
                     }
-                }
+                },
+                "start": 108,
+                "end": 150
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 108,
+        "end": 150,
         "sourceType": "module"
     },
     "comments": []

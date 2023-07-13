@@ -11,14 +11,18 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
+                            "start": 6,
+                            "end": 11,
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 6
+                                    "column": 7,
+                                    "index": 6
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 10
+                                    "column": 12,
+                                    "index": 11
                                 }
                             },
                             "name": "hello"
@@ -27,54 +31,70 @@
                             "type": "StringLiteral",
                             "value": "world",
                             "raw": "'world'",
+                            "start": 14,
+                            "end": 21,
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 14
+                                    "column": 15,
+                                    "index": 14
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 20
+                                    "column": 22,
+                                    "index": 21
                                 }
                             },
                             "extra": {
                                 "raw": "'world'"
                             }
                         },
+                        "start": 6,
+                        "end": 21,
                         "loc": {
                             "start": {
                                 "line": 1,
-                                "column": 6
+                                "column": 7,
+                                "index": 6
                             },
                             "end": {
                                 "line": 1,
-                                "column": 20
+                                "column": 22,
+                                "index": 21
                             }
                         }
                     }
                 ],
+                "start": 0,
+                "end": 22,
                 "loc": {
                     "start": {
                         "line": 1,
-                        "column": 0
+                        "column": 1,
+                        "index": 0
                     },
                     "end": {
                         "line": 1,
-                        "column": 21
+                        "column": 23,
+                        "index": 22
                     }
                 }
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 0,
+        "end": 22,
         "loc": {
             "start": {
                 "line": 1,
-                "column": 0
+                "column": 1,
+                "index": 0
             },
             "end": {
                 "line": 1,
-                "column": 21
+                "column": 23,
+                "index": 22
             }
         },
         "sourceType": "module"

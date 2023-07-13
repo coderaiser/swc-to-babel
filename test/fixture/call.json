@@ -9,6 +9,8 @@
                     "type": "CallExpression",
                     "callee": {
                         "type": "Identifier",
+                        "start": 489,
+                        "end": 493,
                         "name": "test"
                     },
                     "arguments": [
@@ -16,6 +18,8 @@
                             "type": "StringLiteral",
                             "value": "hello world",
                             "raw": "'hello world'",
+                            "start": 494,
+                            "end": 507,
                             "extra": {
                                 "raw": "'hello world'"
                             }
@@ -25,11 +29,15 @@
                             "params": [
                                 {
                                     "type": "Identifier",
+                                    "start": 510,
+                                    "end": 511,
                                     "name": "t"
                                 }
                             ],
                             "body": {
                                 "type": "BlockStatement",
+                                "start": 516,
+                                "end": 609,
                                 "body": [
                                     {
                                         "type": "ExpressionStatement",
@@ -39,12 +47,18 @@
                                                 "type": "MemberExpression",
                                                 "object": {
                                                     "type": "Identifier",
+                                                    "start": 522,
+                                                    "end": 529,
                                                     "name": "emitter"
                                                 },
                                                 "property": {
                                                     "type": "Identifier",
+                                                    "start": 530,
+                                                    "end": 532,
                                                     "name": "on"
                                                 },
+                                                "start": 522,
+                                                "end": 532,
                                                 "computed": false
                                             },
                                             "arguments": [
@@ -54,12 +68,16 @@
                                                     "quasis": [
                                                         {
                                                             "type": "TemplateElement",
+                                                            "start": 534,
+                                                            "end": 542,
                                                             "value": {
                                                                 "cooked": "progress",
                                                                 "raw": "progress"
                                                             }
                                                         }
                                                     ],
+                                                    "start": 533,
+                                                    "end": 543,
                                                     "extra": {}
                                                 },
                                                 {
@@ -67,6 +85,8 @@
                                                     "params": [],
                                                     "body": {
                                                         "type": "BlockStatement",
+                                                        "start": 551,
+                                                        "end": 605,
                                                         "body": [
                                                             {
                                                                 "type": "ExpressionStatement",
@@ -76,29 +96,43 @@
                                                                         "type": "MemberExpression",
                                                                         "object": {
                                                                             "type": "Identifier",
+                                                                            "start": 560,
+                                                                            "end": 561,
                                                                             "name": "t"
                                                                         },
                                                                         "property": {
                                                                             "type": "Identifier",
+                                                                            "start": 562,
+                                                                            "end": 567,
                                                                             "name": "equal"
                                                                         },
+                                                                        "start": 560,
+                                                                        "end": 567,
                                                                         "computed": false
                                                                     },
                                                                     "arguments": [
                                                                         {
                                                                             "type": "Identifier",
+                                                                            "start": 568,
+                                                                            "end": 576,
                                                                             "name": "progress"
                                                                         },
                                                                         {
                                                                             "type": "NumericLiteral",
                                                                             "value": 100,
                                                                             "raw": "100",
+                                                                            "start": 578,
+                                                                            "end": 581,
                                                                             "extra": {
                                                                                 "raw": "100"
                                                                             }
                                                                         }
-                                                                    ]
-                                                                }
+                                                                    ],
+                                                                    "start": 560,
+                                                                    "end": 582
+                                                                },
+                                                                "start": 560,
+                                                                "end": 583
                                                             },
                                                             {
                                                                 "type": "ExpressionStatement",
@@ -108,40 +142,64 @@
                                                                         "type": "MemberExpression",
                                                                         "object": {
                                                                             "type": "Identifier",
+                                                                            "start": 591,
+                                                                            "end": 592,
                                                                             "name": "t"
                                                                         },
                                                                         "property": {
                                                                             "type": "Identifier",
+                                                                            "start": 593,
+                                                                            "end": 596,
                                                                             "name": "end"
                                                                         },
+                                                                        "start": 591,
+                                                                        "end": 596,
                                                                         "computed": false
                                                                     },
-                                                                    "arguments": []
-                                                                }
+                                                                    "arguments": [],
+                                                                    "start": 591,
+                                                                    "end": 598
+                                                                },
+                                                                "start": 591,
+                                                                "end": 599
                                                             }
                                                         ],
                                                         "directives": []
                                                     },
                                                     "async": false,
                                                     "generator": false,
+                                                    "start": 545,
+                                                    "end": 605,
                                                     "id": null
                                                 }
-                                            ]
-                                        }
+                                            ],
+                                            "start": 522,
+                                            "end": 606
+                                        },
+                                        "start": 522,
+                                        "end": 607
                                     }
                                 ],
                                 "directives": []
                             },
                             "async": false,
                             "generator": false,
+                            "start": 509,
+                            "end": 609,
                             "id": null
                         }
-                    ]
-                }
+                    ],
+                    "start": 489,
+                    "end": 610
+                },
+                "start": 489,
+                "end": 611
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 489,
+        "end": 611,
         "sourceType": "module"
     },
     "comments": []

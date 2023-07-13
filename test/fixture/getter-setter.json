@@ -11,6 +11,8 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
+                            "start": 1144,
+                            "end": 1147,
                             "name": "obj"
                         },
                         "init": {
@@ -20,11 +22,15 @@
                                     "type": "ObjectMethod",
                                     "key": {
                                         "type": "Identifier",
+                                        "start": 1158,
+                                        "end": 1164,
                                         "name": "getter"
                                     },
                                     "typeAnnotation": null,
                                     "body": {
                                         "type": "BlockStatement",
+                                        "start": 1167,
+                                        "end": 1193,
                                         "body": [
                                             {
                                                 "type": "ReturnStatement",
@@ -32,14 +38,20 @@
                                                     "type": "StringLiteral",
                                                     "value": "getter",
                                                     "raw": "'getter'",
+                                                    "start": 1180,
+                                                    "end": 1188,
                                                     "extra": {
                                                         "raw": "'getter'"
                                                     }
-                                                }
+                                                },
+                                                "start": 1173,
+                                                "end": 1189
                                             }
                                         ],
                                         "directives": []
                                     },
+                                    "start": 1154,
+                                    "end": 1193,
                                     "kind": "get",
                                     "params": [],
                                     "id": null
@@ -48,30 +60,46 @@
                                     "type": "ObjectMethod",
                                     "key": {
                                         "type": "Identifier",
+                                        "start": 1201,
+                                        "end": 1207,
                                         "name": "setter"
                                     },
                                     "body": {
                                         "type": "BlockStatement",
+                                        "start": 1215,
+                                        "end": 1217,
                                         "body": [],
                                         "directives": []
                                     },
+                                    "start": 1197,
+                                    "end": 1217,
                                     "kind": "set",
                                     "params": [
                                         {
                                             "type": "Identifier",
+                                            "start": 1208,
+                                            "end": 1213,
                                             "name": "value"
                                         }
                                     ],
                                     "id": null
                                 }
-                            ]
-                        }
+                            ],
+                            "start": 1150,
+                            "end": 1220
+                        },
+                        "start": 1144,
+                        "end": 1220
                     }
-                ]
+                ],
+                "start": 1138,
+                "end": 1221
             }
         ],
         "interpreter": null,
         "directives": [],
+        "start": 1138,
+        "end": 1221,
         "sourceType": "module"
     },
     "comments": []
