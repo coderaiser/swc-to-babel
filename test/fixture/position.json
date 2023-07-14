@@ -10,25 +10,17 @@
                     "params": [],
                     "body": {
                         "type": "BlockStatement",
-                        "start": 103,
-                        "end": 105,
                         "body": [],
                         "directives": []
                     },
                     "async": false,
                     "generator": false,
-                    "start": 97,
-                    "end": 105,
                     "id": null
-                },
-                "start": 97,
-                "end": 106
+                }
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 97,
-        "end": 106,
         "sourceType": "module"
     },
     "comments": []

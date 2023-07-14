@@ -11,8 +11,6 @@
                         "type": "NumericLiteral",
                         "value": 1,
                         "raw": "1",
-                        "start": 1253,
-                        "end": 1254,
                         "extra": {
                             "raw": "1"
                         }
@@ -29,18 +27,12 @@
                     },
                     "trailingComments": [],
                     "leadingComments": [],
-                    "innerComments": [],
-                    "start": 1253,
-                    "end": 1263
-                },
-                "start": 1252,
-                "end": 1264
+                    "innerComments": []
+                }
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 1252,
-        "end": 1264,
         "sourceType": "module"
     },
     "comments": []

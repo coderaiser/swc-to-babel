@@ -11,18 +11,12 @@
                         "type": "MemberExpression",
                         "object": {
                             "type": "Identifier",
-                            "start": 1223,
-                            "end": 1230,
                             "name": "console"
                         },
                         "property": {
                             "type": "Identifier",
-                            "start": 1231,
-                            "end": 1234,
                             "name": "log"
                         },
-                        "start": 1223,
-                        "end": 1234,
                         "computed": false
                     },
                     "arguments": [
@@ -30,24 +24,16 @@
                             "type": "StringLiteral",
                             "value": "hello world",
                             "raw": "'hello world'",
-                            "start": 1235,
-                            "end": 1248,
                             "extra": {
                                 "raw": "'hello world'"
                             }
                         }
-                    ],
-                    "start": 1223,
-                    "end": 1249
-                },
-                "start": 1223,
-                "end": 1250
+                    ]
+                }
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 1223,
-        "end": 1250,
         "sourceType": "module"
     },
     "comments": []

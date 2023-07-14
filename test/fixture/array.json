@@ -11,8 +11,6 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
-                            "start": 874,
-                            "end": 876,
                             "name": "__"
                         },
                         "init": {
@@ -21,26 +19,16 @@
                                 null,
                                 {
                                     "type": "Identifier",
-                                    "start": 882,
-                                    "end": 885,
                                     "name": "__a"
                                 }
-                            ],
-                            "start": 879,
-                            "end": 886
-                        },
-                        "start": 874,
-                        "end": 886
+                            ]
+                        }
                     }
-                ],
-                "start": 868,
-                "end": 887
+                ]
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 868,
-        "end": 887,
         "sourceType": "module"
     },
     "comments": []

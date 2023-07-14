@@ -11,8 +11,6 @@
                         "type": "VariableDeclarator",
                         "id": {
                             "type": "Identifier",
-                            "start": 67,
-                            "end": 68,
                             "name": "a"
                         },
                         "init": {
@@ -20,8 +18,6 @@
                             "params": [],
                             "body": {
                                 "type": "BlockStatement",
-                                "start": 77,
-                                "end": 94,
                                 "body": [
                                     {
                                         "type": "ReturnStatement",
@@ -29,36 +25,24 @@
                                             "type": "NumericLiteral",
                                             "value": 5,
                                             "raw": "5",
-                                            "start": 90,
-                                            "end": 91,
                                             "extra": {
                                                 "raw": "5"
                                             }
-                                        },
-                                        "start": 83,
-                                        "end": 92
+                                        }
                                     }
                                 ],
                                 "directives": []
                             },
                             "async": false,
                             "generator": false,
-                            "start": 71,
-                            "end": 94,
                             "id": null
-                        },
-                        "start": 67,
-                        "end": 94
+                        }
                     }
-                ],
-                "start": 61,
-                "end": 95
+                ]
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 61,
-        "end": 95,
         "sourceType": "module"
     },
     "comments": []

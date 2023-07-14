@@ -10,8 +10,6 @@
                     "params": [
                         {
                             "type": "Identifier",
-                            "start": 25,
-                            "end": 34,
                             "loc": {
                                 "start": {
                                     "line": 1,
@@ -33,45 +31,29 @@
                             "type": "MemberExpression",
                             "object": {
                                 "type": "Identifier",
-                                "start": 40,
-                                "end": 43,
                                 "name": "__a"
                             },
                             "property": {
                                 "type": "Identifier",
-                                "start": 44,
-                                "end": 47,
                                 "name": "__b"
                             },
-                            "start": 40,
-                            "end": 47,
                             "computed": false
                         },
                         "arguments": [
                             {
                                 "type": "Identifier",
-                                "start": 48,
-                                "end": 57,
                                 "name": "__args__a"
                             }
-                        ],
-                        "start": 40,
-                        "end": 58
+                        ]
                     },
                     "async": false,
                     "generator": false,
-                    "start": 25,
-                    "end": 58,
                     "id": null
-                },
-                "start": 25,
-                "end": 59
+                }
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 25,
-        "end": 59,
         "sourceType": "module"
     },
     "comments": []

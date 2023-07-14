@@ -10,18 +10,12 @@
                     "properties": [],
                     "trailingComments": [],
                     "leadingComments": [],
-                    "innerComments": [],
-                    "start": 318,
-                    "end": 320
-                },
-                "start": 317,
-                "end": 321
+                    "innerComments": []
+                }
             }
         ],
         "interpreter": null,
         "directives": [],
-        "start": 317,
-        "end": 321,
         "sourceType": "module"
     },
     "comments": []
