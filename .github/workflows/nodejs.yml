@@ -45,6 +45,7 @@ jobs:
         run: typos --write-changes
       - name: Commit fixes
         uses: EndBug/add-and-commit@v9
+        continue-on-error: true
         with:
           message: "chore: ${{ env.NAME }}: lint using actions ☘️"
       - name: Coverage
@@ -53,5 +54,6 @@ jobs:
         run: redrun test:dts
       - name: Coveralls
         uses: coverallsapp/github-action@v2
+        continue-on-error: true
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
