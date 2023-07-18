@@ -1,3 +1,8 @@
+2023.07.18, v2.2.0
+
+fix:
+- ce8a51a incorrect line number calculation and fix bug with JSX elements not having loc keys (#20)
+
 2023.07.12, v2.1.0
 
 feature:
