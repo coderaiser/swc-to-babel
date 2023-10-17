@@ -1,4 +1,7 @@
-import {ParseResult, Types} from '@putout/babel';
+import {
+    ParseResult,
+    Types,
+} from '@putout/babel';
 import type {Module} from '@swc/core';
 
 /**
