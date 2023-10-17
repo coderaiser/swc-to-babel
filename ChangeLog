@@ -1,3 +1,12 @@
+2023.10.17, v3.0.0
+
+feature:
+- 7aefd72 types
+- aa0ef7b babel v8
+- be3c7a6 ImportAttributes
+- f927c37 package: putout v32.2.2
+- 4a8b9e3 package: eslint-plugin-putout v20.0.0
+
 2023.07.18, v2.2.0
 
 fix:
