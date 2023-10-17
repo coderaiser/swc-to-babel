@@ -2,7 +2,7 @@
 
 const {parseSync} = require('@swc/core');
 const toBabel = require('.');
-const traverse = require('@babel/traverse').default;
+const traverse = require('@putout/babel');
 
 const code = `
     const f = ({a}) => a;
