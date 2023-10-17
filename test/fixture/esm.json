@@ -22,7 +22,8 @@
                         "raw": "\"__a\""
                     }
                 },
-                "assertions": [],
+                "with": null,
+                "attributes": [],
                 "importKind": "value"
             },
             {
@@ -48,7 +49,8 @@
                         "raw": "'b'"
                     }
                 },
-                "assertions": [],
+                "with": null,
+                "attributes": [],
                 "importKind": "value"
             },
             {
@@ -86,6 +88,7 @@
                     }
                 ],
                 "source": null,
+                "with": null,
                 "assertions": [],
                 "exportKind": "value"
             }

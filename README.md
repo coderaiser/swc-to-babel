@@ -42,9 +42,9 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `TSTypeOperator` has `operator` instead of `op`;
 - `TSTypeParameter` has a field `name` which is `string` instead of `Identifier`;
 - `FunctionDeclaration` instead of `FunctionExpression` with `identifier` field;
-- `ImportDeclaration` has `importKind` instead of `typeOnly` field;
+- `ImportDeclaration` has `importKind` instead of `typeOnly` and `attributes` fields;
 - `ObjectProperty` instead of `KeyValueProperty`, `KeyValuePatternProperty` and `AssignmentPatternProperty`;
-- `ExportNamedDeclaration` has `exportKind`, `specifiers` and `assertions` fields;
+- `ExportNamedDeclaration` has `exportKind`, `specifiers` fields;
 - `ExportSpecifier` has `local` which is never `null` instead of `orig`;
 - `ExportDefaultDeclaration` has `declaration` instead of `decl`;
 - `TSAnyKeyword` instead of `TSKeywordType`;

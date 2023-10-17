@@ -68,6 +68,7 @@
                     }
                 ],
                 "source": null,
+                "with": null,
                 "assertions": [],
                 "exportKind": "value"
             },
