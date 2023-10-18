@@ -1,6 +1,6 @@
 import {
     ParseResult,
-    Types,
+    types,
 } from '@putout/babel';
 import type {Module} from '@swc/core';
 
@@ -10,4 +10,4 @@ import type {Module} from '@swc/core';
  * @param {string} [src=""] Source code
  * @returns {ParseResult<File>} Babel ast
  */
-export default function toBabel(ast: Module, src?: string): ParseResult<Types.File>;
+export default function toBabel(ast: Module, src?: string): ParseResult<types.File>;
