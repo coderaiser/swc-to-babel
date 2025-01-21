@@ -49,8 +49,9 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a a 
 - `ExportDefaultDeclaration` has `declaration` instead of `decl`;
 - `TSAnyKeyword` instead of `TSKeywordType`;
 - `TSAsExpression` instead of `TsConstAssertion`;
-- `ObjectMethod` with `kind: get` instead of `GetterProperty`
-- `ObjectMethod` with `kind: set` instead of `SetterProperty`
+- `ObjectMethod` with `kind: get` instead of `GetterProperty`;
+- `ObjectMethod` with `kind: set` instead of `SetterProperty`;
+- `TSMappedType` `typeParameter.constraint`, instead of `typeParameter`;
 - etc...
 
 `swc-to-babel` aims to smooth this differences.
