@@ -44,7 +44,7 @@
     "madrun": "^9.0.4",
     "nodemon": "^3.0.1",
     "putout": "^32.2.2",
-    "supertape": "^8.1.0",
+    "supertape": "^10.10.0",
     "try-catch": "^3.0.1",
     "typescript": "^5.0.4"
   },
