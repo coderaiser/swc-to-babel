@@ -39,7 +39,7 @@
     "c8": "^8.0.0",
     "check-dts": "^0.7.1",
     "eslint": "^8.0.0",
-    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-putout": "^23.4.0",
     "madrun": "^10.2.3",
     "nodemon": "^3.0.1",
