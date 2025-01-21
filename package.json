@@ -38,7 +38,7 @@
   "devDependencies": {
     "c8": "^10.1.3",
     "check-dts": "^0.8.2",
-    "eslint": "^8.0.0",
+    "eslint": "^9.18.0",
     "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-putout": "^23.4.0",
     "madrun": "^10.2.3",
