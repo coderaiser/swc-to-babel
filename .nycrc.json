@@ -7,7 +7,8 @@
         "**/fixture",
         "test",
         "**/lib/*.d.ts",
-        ".*.{js,mjs}"
+        ".*.{js,mjs}",
+        "**/*.config.*"
     ],
     "branches": 100,
     "lines": 100,

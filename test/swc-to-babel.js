@@ -1,14 +1,15 @@
 'use strict';
 
-const process = require('process');
-const {join} = require('path');
-const {readFileSync, writeFileSync} = require('fs');
+const process = require('node:process');
+const {join} = require('node:path');
+const {readFileSync, writeFileSync} = require('node:fs');
 
 const {extend} = require('supertape');
 const swc = require('@swc/core');
 const {print} = require('putout');
-const swcToBabel = require('..');
+
 const tryCatch = require('try-catch');
+const swcToBabel = require('..');
 
 const json = (a) => JSON.parse(JSON.stringify(a));
 

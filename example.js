@@ -1,8 +1,9 @@
 'use strict';
 
 const {parseSync} = require('@swc/core');
-const toBabel = require('.');
+
 const traverse = require('@putout/babel');
+const toBabel = require('.');
 
 const code = `
     const f = ({a}) => a;

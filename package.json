@@ -9,7 +9,7 @@
   "types": "./lib/swc-to-babel.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/swc-to-babel.git"
+    "url": "git+https://github.com/coderaiser/swc-to-babel.git"
   },
   "scripts": {
     "wisdom": "madrun wisdom",
@@ -50,7 +50,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "publishConfig": {
     "access": "public"

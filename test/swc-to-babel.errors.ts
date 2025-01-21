@@ -4,4 +4,3 @@ import toBabel from '..';
 toBabel();
 // THROWS Argument of type 'number' is not assignable to parameter of type 'Module'.
 toBabel(1);
-
