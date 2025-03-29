@@ -74,8 +74,14 @@
             },
             {
                 "type": "ExportDefaultDeclaration",
-                "exportKind": "value",
-                "assertions": []
+                "declaration": {
+                    "extra": {
+                        "raw": "1"
+                    },
+                    "raw": "1",
+                    "type": "NumericLiteral",
+                    "value": 1
+                }
             },
             {
                 "type": "ExportDefaultDeclaration",
@@ -118,6 +124,24 @@
                 },
                 "exportKind": "value",
                 "assertions": []
+            },
+            {
+                "declaration": {
+                    "async": false,
+                    "body": {
+                        "extra": {
+                            "raw": "1"
+                        },
+                        "raw": "1",
+                        "type": "NumericLiteral",
+                        "value": 1
+                    },
+                    "generator": false,
+                    "id": null,
+                    "params": [],
+                    "type": "FunctionDeclaration"
+                },
+                "type": "ExportDefaultDeclaration"
             }
         ],
         "interpreter": null,
