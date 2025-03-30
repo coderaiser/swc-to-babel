@@ -1,3 +1,16 @@
+2025.03.30, v5.0.0
+
+fix:
+- 694ce35 export default expression. (#21)
+
+feature:
+- 574029d migrate to ESM
+- d4ef93a swc-to-babel: @putout/eslint-flat v3.0.0
+- be70287 swc-to-babel: supertape v11.0.4
+- 951d66d swc-to-babel: putout v39.5.0
+- 7a0d86c swc-to-babel: madrun v11.0.0
+- c6b25aa swc-to-babel: eslint-plugin-putout v26.1.0
+
 2025.01.21, v4.0.0
 
 feature:
