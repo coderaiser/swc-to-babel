@@ -10,7 +10,7 @@ export const match = {
 
 export default defineConfig([
     safeAlign, {
-        'rules': {
+        rules: {
             'no-useless-return': 'off',
         },
     },
