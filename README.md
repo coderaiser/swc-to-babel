@@ -65,9 +65,9 @@ npm i swc-to-babel
 ### Example
 
 ```js
-const swc = require('@swc/core');
-const toBabel = require('swc-to-babel');
-const traverse = require('@babel/traverse').default;
+import swc from '@swc/core';
+import toBabel from 'swc-to-babel';
+import traverse from 'babel/traverse';
 
 const ast = toBabel(swc.parseSync(`
     const f = ({a}) => a;
