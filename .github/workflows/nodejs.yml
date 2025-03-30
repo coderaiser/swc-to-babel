@@ -28,7 +28,7 @@ jobs:
       - name: Install
         run: bun i -f --no-save
       - name: Lint
-        run: NODE_OPTIONS=--max-old-space-size=7168 redrun fix:lint -- --no-worker
+        run: redrun fix:lint -- --no-worker
       - name: Install Rust
         run: rustup update
       - uses: actions/cache@v4
