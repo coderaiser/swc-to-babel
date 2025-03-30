@@ -75,12 +75,12 @@
             {
                 "type": "ExportDefaultDeclaration",
                 "declaration": {
+                    "type": "NumericLiteral",
+                    "value": 1,
+                    "raw": "1",
                     "extra": {
                         "raw": "1"
-                    },
-                    "raw": "1",
-                    "type": "NumericLiteral",
-                    "value": 1
+                    }
                 }
             },
             {
@@ -126,22 +126,22 @@
                 "assertions": []
             },
             {
+                "type": "ExportDefaultDeclaration",
                 "declaration": {
-                    "async": false,
+                    "type": "FunctionDeclaration",
+                    "params": [],
                     "body": {
+                        "type": "NumericLiteral",
+                        "value": 1,
+                        "raw": "1",
                         "extra": {
                             "raw": "1"
-                        },
-                        "raw": "1",
-                        "type": "NumericLiteral",
-                        "value": 1
+                        }
                     },
+                    "async": false,
                     "generator": false,
-                    "id": null,
-                    "params": [],
-                    "type": "FunctionDeclaration"
-                },
-                "type": "ExportDefaultDeclaration"
+                    "id": null
+                }
             }
         ],
         "interpreter": null,

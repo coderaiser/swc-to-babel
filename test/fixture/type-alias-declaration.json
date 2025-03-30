@@ -29,6 +29,32 @@
                                 "name": "Key"
                             }
                         }
+                    },
+                    "constrain": {
+                        "type": "TsTypeOperator",
+                        "span": {
+                            "start": 670,
+                            "end": 680
+                        },
+                        "op": "keyof",
+                        "typeAnnotation": {
+                            "type": "TsTypeReference",
+                            "span": {
+                                "start": 676,
+                                "end": 680
+                            },
+                            "typeName": {
+                                "type": "Identifier",
+                                "span": {
+                                    "start": 676,
+                                    "end": 680
+                                },
+                                "ctxt": 1,
+                                "value": "Type",
+                                "optional": false
+                            },
+                            "typeParams": null
+                        }
                     }
                 }
             },
@@ -57,6 +83,32 @@
                                 "type": "Identifier",
                                 "name": "__b"
                             }
+                        }
+                    },
+                    "constrain": {
+                        "type": "TsTypeOperator",
+                        "span": {
+                            "start": 717,
+                            "end": 726
+                        },
+                        "op": "keyof",
+                        "typeAnnotation": {
+                            "type": "TsTypeReference",
+                            "span": {
+                                "start": 723,
+                                "end": 726
+                            },
+                            "typeName": {
+                                "type": "Identifier",
+                                "span": {
+                                    "start": 723,
+                                    "end": 726
+                                },
+                                "ctxt": 1,
+                                "value": "__c",
+                                "optional": false
+                            },
+                            "typeParams": null
                         }
                     }
                 }

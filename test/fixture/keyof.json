@@ -28,6 +28,32 @@
                                 "name": "__b"
                             }
                         }
+                    },
+                    "constrain": {
+                        "type": "TsTypeOperator",
+                        "span": {
+                            "start": 128,
+                            "end": 137
+                        },
+                        "op": "keyof",
+                        "typeAnnotation": {
+                            "type": "TsTypeReference",
+                            "span": {
+                                "start": 134,
+                                "end": 137
+                            },
+                            "typeName": {
+                                "type": "Identifier",
+                                "span": {
+                                    "start": 134,
+                                    "end": 137
+                                },
+                                "ctxt": 1,
+                                "value": "__c",
+                                "optional": false
+                            },
+                            "typeParams": null
+                        }
                     }
                 }
             }
