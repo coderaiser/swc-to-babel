@@ -1,7 +1,7 @@
 {
   "name": "swc-to-babel",
   "version": "4.0.0",
-  "type": "commonjs",
+  "type": "module",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "convert swc ast to babel",
   "homepage": "http://github.com/coderaiser/swc-to-babel",

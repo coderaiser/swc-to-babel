@@ -1,16 +1,14 @@
-'use strict';
+import process from 'node:process';
+import {join} from 'node:path';
+import {readFileSync, writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {extend} from 'supertape';
+import swc from '@swc/core';
+import {print} from 'putout';
+import tryCatch from 'try-catch';
+import swcToBabel from '../lib/swc-to-babel.js';
 
-const process = require('node:process');
-const {join} = require('node:path');
-const {readFileSync, writeFileSync} = require('node:fs');
-
-const {extend} = require('supertape');
-const swc = require('@swc/core');
-const {print} = require('putout');
-
-const tryCatch = require('try-catch');
-const swcToBabel = require('..');
-
+const require = createRequire(import.meta.url);
 const json = (a) => JSON.parse(JSON.stringify(a));
 
 const test = extend({
@@ -42,7 +40,7 @@ const test = extend({
     },
 });
 
-const fixtureDir = join(__dirname, 'fixture');
+const fixtureDir = new URL('fixture', import.meta.url).pathname;
 
 const isUpdate = process.env.UPDATE;
 
